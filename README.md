@@ -2,7 +2,7 @@ caDSR Reader
 ============
 
 This project reads XML-encoded [caDSR](https://wiki.nci.nih.gov/display/caDSR/caDSR+Wiki) [11179-based](http://metadata-standards.org/11179/)
-common data elements (CDEs).
+Common Data Elements (CDEs).
 
 XML files containing various CDE collections can be found [here](https://wiki.nci.nih.gov/display/caDSR/caDSR+Hosted+Data+Standards%2C+Downloads%2C+and+Transformation+Utilities).
 Go to the area labeled "Download caDSR Community Released CDEs" and click on "caDSR Production CDEs in XML".
