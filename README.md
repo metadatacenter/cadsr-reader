@@ -8,7 +8,7 @@ This project reads XML-encoded [caDSR](https://wiki.nci.nih.gov/display/caDSR/ca
 common data elements (CDEs).
 
 XML files containing various CDE collections can be found [here](https://wiki.nci.nih.gov/display/caDSR/caDSR+Hosted+Data+Standards%2C+Downloads%2C+and+Transformation+Utilities).
-Got the the area labeled "Download caDSR Community Released CDEs" and click on "caDSR Production CDEs in XML".
+Go to the area labeled "Download caDSR Community Released CDEs" and click on "caDSR Production CDEs in XML".
 A large ZIP file can then be downloaded which will contain a deozen or so XML files containing caDSR CDEs.
 Note: these enclosed XML files seemed to be encoded as ISO-LATIN-1 so convert them to UTF-8 so that the code will correctly process them.
 
