@@ -23,25 +23,6 @@
     <url>https://github.com/metadatacenter/cadsr2cedar</url>
   </scm>
 
-  <dependencies>
-
-    <dependency>
-      <groupId>commons-lang</groupId>
-      <artifactId>commons-lang</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-annotations</artifactId>
-    </dependency>
-
-  </dependencies>
-
   <build>
 
     <plugins>
@@ -57,7 +38,7 @@
 	<configuration>
 	  <archive> 
 	    <manifest>
-	      <mainClass>org.metadatacenter.ingestor.cadsr.CDEXMLInstances2CEDARCDEInstances</mainClass>
+	      <mainClass>org.metadatacenter.ingestor.cadsr.CDEXMLInstancesReader</mainClass>
 	    </manifest>
 	  </archive>
 	  <descriptorRefs>
@@ -86,24 +67,8 @@
           </execution>
         </executions>
         <configuration>
-	  <mainClass>org.metadatacenter.ingestor.cadsr.CDEXMLInstances2CEDARCDEInstances</mainClass>
+	  <mainClass>org.metadatacenter.ingestor.cadsr.CDEXMLInstancesReader</mainClass>
         </configuration>
-      </plugin>
-
-      <plugin>
-        <groupId>org.jsonschema2pojo</groupId>
-        <artifactId>jsonschema2pojo-maven-plugin</artifactId>
-        <configuration>
-          <sourceDirectory>${basedir}/src/main/resources/json-schema</sourceDirectory>
-          <targetPackage>org.metadatacenter.ingestor.cedar</targetPackage>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
 
       <plugin>
