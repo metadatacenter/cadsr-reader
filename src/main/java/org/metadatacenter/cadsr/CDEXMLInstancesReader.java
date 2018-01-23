@@ -398,7 +398,6 @@ public class CDEXMLInstancesReader
 
   private static void processCADSRValueDomain(DataElement cadsrDataElement)
   {
-    System.out.println("**Value Domain**");
     VALUEDOMAIN cadsrVALUEDOMAIN = cadsrDataElement.getVALUEDOMAIN();
 
     //value domain public id
@@ -411,11 +410,11 @@ public class CDEXMLInstancesReader
 
     //value domain preferred definition
     String cadsrValueDomainPreferredDefinition = cadsrVALUEDOMAIN.getPreferredDefinition().getContent();
-    System.out.print(cadsrValueDomainPreferredDefinition + ", ");
+//    System.out.print(cadsrValueDomainPreferredDefinition + ", ");
 
     //value domain long name
     String cadsrValueDomainLongName = cadsrVALUEDOMAIN.getLongName().getContent();
-    System.out.print(cadsrValueDomainLongName + ", ");
+  //  System.out.print(cadsrValueDomainLongName + ", ");
 
     //value domain version
     String cadsrValueDomainVersion = cadsrVALUEDOMAIN.getVersion().getContent();
@@ -470,7 +469,7 @@ public class CDEXMLInstancesReader
     if (cadsrValueDomainMaximumLength.equals("") && cadsrVALUEDOMAIN.getMaximumLength().getNULL().equals("TRUE")) {
       cadsrValueDomainMaximumLength = "NULL";
     }
-    System.out.print(cadsrValueDomainMaximumLength + ", ");
+    System.out.print("max:" + cadsrValueDomainMaximumLength + ", ");
 
     //value domain minimum length
     String cadsrValueDomainMinimumLength = cadsrVALUEDOMAIN.getMinimumLength().getContent();
@@ -480,7 +479,7 @@ public class CDEXMLInstancesReader
         cadsrValueDomainMinimumLength = "NULL";
       }
     }
-    System.out.print(cadsrValueDomainMinimumLength + ", ");
+    System.out.print("min:" + cadsrValueDomainMinimumLength + ", ");
 
     //decimal place
     String cadsrValueDomainDecimalPlace = cadsrVALUEDOMAIN.getDecimalPlace().getContent();
@@ -490,7 +489,7 @@ public class CDEXMLInstancesReader
         cadsrValueDomainDecimalPlace = "NULL";
       }
     }
-    System.out.print(cadsrValueDomainDecimalPlace + ", ");
+    System.out.print("dec:" + cadsrValueDomainDecimalPlace + ", ");
 
     //character set name
     String cadsrValueDomainCharacterSetName = cadsrVALUEDOMAIN.getCharacterSetName().getContent();
@@ -530,7 +529,7 @@ public class CDEXMLInstancesReader
         cadsrValueDomainOrigin = "NULL";
       }
     }
-    System.out.print(cadsrValueDomainOrigin + ", ");
+    //System.out.print(cadsrValueDomainOrigin + ", ");
 
     processCADSRValueDomainRepresentations(cadsrVALUEDOMAIN);
 
@@ -654,8 +653,8 @@ public class CDEXMLInstancesReader
 
   private static void processCADSRPermissibleValues(VALUEDOMAIN cadsrVALUEDOMAIN)
   {
-    //permissible values
-    //System.out.println("**Permissible Values**");
+    System.out.print("[");
+
     List<PermissibleValuesITEM> permissibleValuesITEMList = cadsrVALUEDOMAIN.getPermissibleValues()
       .getPermissibleValuesITEM();
     PermissibleValues cedarPermissibleValues = new PermissibleValues();
@@ -664,11 +663,11 @@ public class CDEXMLInstancesReader
 
         // permissible values item valid value
         String cadsrPermissibleValuesItemValidValue = val.getVALIDVALUE().getContent();
-        //System.out.println(cadsrPermissibleValuesItemValidValue);
+        System.out.print(cadsrPermissibleValuesItemValidValue + ", ");
 
         // permissible values item value meaning
         String cadsrPermissibleValuesItemValueMeaning = val.getVALUEMEANING().getContent();
-        //System.out.println(cadsrPermissibleValuesItemValueMeaning);
+        //System.out.print(cadsrPermissibleValuesItemValueMeaning + ", ");
 
         // permissible values item meaning description
         String cadsrPermissibleValuesItemMeaningDescription = val.getMEANINGDESCRIPTION().getContent();
@@ -676,7 +675,7 @@ public class CDEXMLInstancesReader
 
         // permissible values item meaning concepts
         String cadsrPermissibleValuesItemMeaningConcepts = val.getMEANINGCONCEPTS().getContent();
-        //System.out.println(cadsrPermissibleValuesItemMeaningConcepts);
+        System.out.print("(" + cadsrPermissibleValuesItemMeaningConcepts + ") ");
 
         // permissible values item pv begin date
         String cadsrPermissibleValuesItemPVBeginDate = val.getPVBEGINDATE().getContent();
@@ -706,6 +705,8 @@ public class CDEXMLInstancesReader
         //System.out.println(cadsrPermissibleValuesItemVMVersion);
       }
     }
+
+    System.out.print("], ");
   }
 
   private static void processCADSRValueDomainConcepts(VALUEDOMAIN cadsrVALUEDOMAIN)
