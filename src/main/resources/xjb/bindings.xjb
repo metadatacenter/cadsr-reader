@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<jaxb:bindings version="2.0" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+ xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+ xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance">
+
+  <jaxb:bindings schemaLocation="../xsd/DataElement_V4.0.xsd">
+
+    <jaxb:schemaBindings>
+      <jaxb:package name="org.metadatacenter.ingestor.cadsr"/>
+    </jaxb:schemaBindings>
+
+    <jaxb:bindings node="//xs:element[@name='LongName']">
+      <jaxb:class name="LongName1"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='LONGNAME']">
+      <jaxb:class name="LONGNAME2"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='PreferredName']">
+      <jaxb:class name="PreferredName1"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='PREFERREDNAME']">
+      <jaxb:class name="PREFERREDNAME2"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='PublicId']">
+      <jaxb:class name="PublicID1"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='PUBLICID']">
+      <jaxb:class name="PUBLICID2"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='ContextName']">
+      <jaxb:class name="ContextName1"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='CONTEXTNAME']">
+      <jaxb:class name="CONTEXTNAME2"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='Origin']">
+      <jaxb:class name="Origin1"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='ORIGIN']">
+      <jaxb:class name="Origin2"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='VERSION']">
+      <jaxb:class name="Version1"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='Version']">
+      <jaxb:class name="Version2"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='CONTEXTVERSION']">
+      <jaxb:class name="CONTEXTVERSION1"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='ContextVersion']">
+      <jaxb:class name="ContextVersion2"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='DisplayOrder']">
+      <jaxb:class name="DisplayOrder1"/>
+    </jaxb:bindings>
+
+   <jaxb:bindings node="//xs:element[@name='PREFERREDDEFINITION']">
+      <jaxb:class name="PREFERREDDEFINITION1"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='PreferredDefinition']">
+      <jaxb:class name="PreferredDefinition2"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='WORKFLOWSTATUS']">
+      <jaxb:class name="WORKFLOWSTATUS1"/>
+    </jaxb:bindings>
+
+    <jaxb:bindings node="//xs:element[@name='WorkflowStatus']">
+      <jaxb:class name="WorkFlowStatus"/>
+    </jaxb:bindings>
+
+  </jaxb:bindings>
+
+</jaxb:bindings>

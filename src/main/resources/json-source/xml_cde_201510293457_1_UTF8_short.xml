@@ -1,0 +1,1303 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataElementsList>
+    <DataElement num="1">
+        <PUBLICID>2188100</PUBLICID>
+        <LONGNAME>Temperature Derived in Celsius</LONGNAME>
+        <PREFERREDNAME>TMP_DERIV_CEL</PREFERREDNAME>
+        <PREFERREDDEFINITION>The temperature of an individual derived in celsius.</PREFERREDDEFINITION>
+        <VERSION>1</VERSION>
+        <WORKFLOWSTATUS>RELEASED</WORKFLOWSTATUS>
+        <CONTEXTNAME>caBIG</CONTEXTNAME>
+        <CONTEXTVERSION>1</CONTEXTVERSION>
+        <ORIGIN NULL="TRUE"/>
+        <REGISTRATIONSTATUS>Qualified</REGISTRATIONSTATUS>
+        <DATAELEMENTCONCEPT>
+            <PublicId>2013132</PublicId>
+            <PreferredName>TEMP_CEL</PreferredName>
+            <PreferredDefinition>The degree of hotness or coldness of a body or environment using the Celsius
+                (Centigrade) scale.
+            </PreferredDefinition>
+            <LongName>Temperature Celsius Scale</LongName>
+            <Version>1</Version>
+            <WorkflowStatus>RELEASED</WorkflowStatus>
+            <ContextName>CCR</ContextName>
+            <ContextVersion>1</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2008556</PublicId>
+                <ContextName>CTEP</ContextName>
+                <ContextVersion>2.31</ContextVersion>
+                <PreferredName>ASSESS_RESULTS</PreferredName>
+                <Version>1</Version>
+                <LongName>Assessment Results</LongName>
+            </ConceptualDomain>
+            <ObjectClass>
+                <PublicId>2180841</PublicId>
+                <ContextName>CCR</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>Temperature</PreferredName>
+                <Version>1</Version>
+                <LongName>Temperature</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25206</PREFERRED_NAME>
+                        <LONG_NAME>Temperature</LONG_NAME>
+                        <CON_ID>2202772</CON_ID>
+                        <DEFINITION_SOURCE>Source =&gt; Name: NCI,</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </ObjectClass>
+            <Property>
+                <PublicId>2196017</PublicId>
+                <ContextName>CCR</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>Celsius Scale</PreferredName>
+                <Version>1</Version>
+                <LongName>Celsius Scale</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C41151</PREFERRED_NAME>
+                        <LONG_NAME>Celsius Scale</LONG_NAME>
+                        <CON_ID>2202541</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </Property>
+            <ObjectClassQualifier NULL="TRUE"/>
+            <PropertyQualifier NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+        </DATAELEMENTCONCEPT>
+        <VALUEDOMAIN>
+            <PublicId>2188098</PublicId>
+            <PreferredName>T_MSRMT_DERIV</PreferredName>
+            <PreferredDefinition>The temperature of an individual derived in celsius.</PreferredDefinition>
+            <LongName>Temperature Measurement Derived</LongName>
+            <Version>1</Version>
+            <WorkflowStatus>RELEASED</WorkflowStatus>
+            <ContextName>caBIG</ContextName>
+            <ContextVersion>1</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2183782</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>CABIG</PreferredName>
+                <Version>1</Version>
+                <LongName>caBIG</LongName>
+            </ConceptualDomain>
+            <Datatype>NUMBER</Datatype>
+            <ValueDomainType>NonEnumerated</ValueDomainType>
+            <UnitOfMeasure NULL="TRUE"/>
+            <DisplayFormat NULL="TRUE"/>
+            <MaximumLength>5</MaximumLength>
+            <MinimumLength NULL="TRUE"/>
+            <DecimalPlace>2</DecimalPlace>
+            <CharacterSetName NULL="TRUE"/>
+            <MaximumValue NULL="TRUE"/>
+            <MinimumValue NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+            <Representation>
+                <PublicId NULL="TRUE"/>
+                <ContextName NULL="TRUE"/>
+                <ContextVersion NULL="TRUE"/>
+                <PreferredName NULL="TRUE"/>
+                <Version NULL="TRUE"/>
+                <LongName NULL="TRUE"/>
+                <ConceptDetails/>
+            </Representation>
+            <PermissibleValues/>
+            <ValueDomainConcepts/>
+        </VALUEDOMAIN>
+        <REFERENCEDOCUMENTSLIST>
+            <REFERENCEDOCUMENTSLIST_ITEM>
+                <Name>Temp Derived (Cel)</Name>
+                <OrganizationName NULL="TRUE"/>
+                <DocumentType>Preferred Question Text</DocumentType>
+                <DocumentText>Temp Derived (Cel)</DocumentText>
+                <URL NULL="TRUE"/>
+                <Language>ENGLISH</Language>
+                <DisplayOrder NULL="TRUE"/>
+            </REFERENCEDOCUMENTSLIST_ITEM>
+        </REFERENCEDOCUMENTSLIST>
+        <CLASSIFICATIONSLIST>
+            <CLASSIFICATIONSLIST_ITEM>
+                <ClassificationScheme>
+                    <PublicId>2183535</PublicId>
+                    <ContextName>caBIG</ContextName>
+                    <ContextVersion>1</ContextVersion>
+                    <PreferredName>Clinical Trial Mgmt Systems</PreferredName>
+                    <Version>1</Version>
+                </ClassificationScheme>
+                <ClassificationSchemeItemName>CTMS C3D Adopter Sites</ClassificationSchemeItemName>
+                <ClassificationSchemeItemType>GROUP_TYPE</ClassificationSchemeItemType>
+                <CsiPublicId>2812625</CsiPublicId>
+                <CsiVersion>1</CsiVersion>
+            </CLASSIFICATIONSLIST_ITEM>
+            <CLASSIFICATIONSLIST_ITEM>
+                <ClassificationScheme>
+                    <PublicId>2183535</PublicId>
+                    <ContextName>caBIG</ContextName>
+                    <ContextVersion>1</ContextVersion>
+                    <PreferredName>Clinical Trial Mgmt Systems</PreferredName>
+                    <Version>1</Version>
+                </ClassificationScheme>
+                <ClassificationSchemeItemName>Duke University</ClassificationSchemeItemName>
+                <ClassificationSchemeItemType>GROUP_TYPE</ClassificationSchemeItemType>
+                <CsiPublicId>2811715</CsiPublicId>
+                <CsiVersion>1</CsiVersion>
+            </CLASSIFICATIONSLIST_ITEM>
+        </CLASSIFICATIONSLIST>
+        <ALTERNATENAMELIST>
+            <ALTERNATENAMELIST_ITEM>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <AlternateName>ENGLISH</AlternateName>
+                <AlternateNameType>CONTEXT NAME</AlternateNameType>
+                <Language>ENGLISH</Language>
+            </ALTERNATENAMELIST_ITEM>
+        </ALTERNATENAMELIST>
+        <DATAELEMENTDERIVATION>
+            <DerivationType>CALCULATED</DerivationType>
+            <DerivationTypeDescription>CALCULATED</DerivationTypeDescription>
+            <Methods>Multiply value by 5/9, and subtract 32. Resultant value is displayed as derived temperature
+                Celsius.
+            </Methods>
+            <Rule>When temperature value is entered as a degrees Fahrenheit value, calculate and display as degrees
+                Celsius.
+            </Rule>
+            <ConcatenationCharacter NULL="TRUE"/>
+            <ComponentDataElementsList>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2004286</PublicId>
+                    <LongName>Temperature Celsius</LongName>
+                    <PreferredName>TEMP_CEL</PreferredName>
+                    <PreferredDefinition>The body temperature expressed in Celsius degrees.</PreferredDefinition>
+                    <Version>2</Version>
+                    <WorkflowStatus>RETIRED PHASED OUT</WorkflowStatus>
+                    <ContextName>CCR</ContextName>
+                    <DisplayOrder>2</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2182748</PublicId>
+                    <LongName>Participant Temperature</LongName>
+                    <PreferredName>PT_TEMP</PreferredName>
+                    <PreferredDefinition>The participant&quot;s temperature.</PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RELEASED</WorkflowStatus>
+                    <ContextName>DCP</ContextName>
+                    <DisplayOrder>1</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+            </ComponentDataElementsList>
+        </DATAELEMENTDERIVATION>
+    </DataElement>
+    <DataElement num="2">
+        <PUBLICID>2239920</PUBLICID>
+        <LONGNAME>Examination Age in Derived Years Number</LONGNAME>
+        <PREFERREDNAME>EXM_AGE_DERIV_YR_NUM</PREFERREDNAME>
+        <PREFERREDDEFINITION>A person's age at the time of an examiniation, expressed as a derived number of years since
+            birth.
+        </PREFERREDDEFINITION>
+        <VERSION>1</VERSION>
+        <WORKFLOWSTATUS>RELEASED</WORKFLOWSTATUS>
+        <CONTEXTNAME>NHLBI</CONTEXTNAME>
+        <CONTEXTVERSION>1</CONTEXTVERSION>
+        <ORIGIN NULL="TRUE"/>
+        <REGISTRATIONSTATUS>Qualified</REGISTRATIONSTATUS>
+        <DATAELEMENTCONCEPT>
+            <PublicId>2239918</PublicId>
+            <PreferredName>EXAM_AGE</PreferredName>
+            <PreferredDefinition>A person's age at the time of an examiniation, usually stated in years since birth.
+            </PreferredDefinition>
+            <LongName>Examination Age</LongName>
+            <Version>1</Version>
+            <WorkflowStatus>RELEASED</WorkflowStatus>
+            <ContextName>NHLBI</ContextName>
+            <ContextVersion>1</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2008532</PublicId>
+                <ContextName>CTEP</ContextName>
+                <ContextVersion>2.31</ContextVersion>
+                <PreferredName>INDS</PreferredName>
+                <Version>1</Version>
+                <LongName>Individuals</LongName>
+            </ConceptualDomain>
+            <ObjectClass>
+                <PublicId>2234874</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C25305</PreferredName>
+                <Version>1</Version>
+                <LongName>Exam</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25305</PREFERRED_NAME>
+                        <LONG_NAME>Medical Examination</LONG_NAME>
+                        <CON_ID>2202633</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </ObjectClass>
+            <Property>
+                <PublicId>2239916</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C25150</PreferredName>
+                <Version>1</Version>
+                <LongName>Age</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25150</PREFERRED_NAME>
+                        <LONG_NAME>Age</LONG_NAME>
+                        <CON_ID>2202837</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </Property>
+            <ObjectClassQualifier NULL="TRUE"/>
+            <PropertyQualifier NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+        </DATAELEMENTCONCEPT>
+        <VALUEDOMAIN>
+            <PublicId>2018812</PublicId>
+            <PreferredName>AGE_YR_NUM</PreferredName>
+            <PreferredDefinition>Number of years since birth, expressed as a concept of quantity derived from zero and
+                units.
+            </PreferredDefinition>
+            <LongName>Age in Years Number</LongName>
+            <Version>1</Version>
+            <WorkflowStatus>RELEASED</WorkflowStatus>
+            <ContextName>SPOREs</ContextName>
+            <ContextVersion>2.31</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2008532</PublicId>
+                <ContextName>CTEP</ContextName>
+                <ContextVersion>2.31</ContextVersion>
+                <PreferredName>INDS</PreferredName>
+                <Version>1</Version>
+                <LongName>Individuals</LongName>
+            </ConceptualDomain>
+            <Datatype>NUMBER</Datatype>
+            <ValueDomainType>NonEnumerated</ValueDomainType>
+            <UnitOfMeasure NULL="TRUE"/>
+            <DisplayFormat NULL="TRUE"/>
+            <MaximumLength>2</MaximumLength>
+            <MinimumLength>1</MinimumLength>
+            <DecimalPlace NULL="TRUE"/>
+            <CharacterSetName NULL="TRUE"/>
+            <MaximumValue NULL="TRUE"/>
+            <MinimumValue NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+            <Representation>
+                <PublicId>2233101</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C25337</PreferredName>
+                <Version>1</Version>
+                <LongName>Number</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25337</PREFERRED_NAME>
+                        <LONG_NAME>Number</LONG_NAME>
+                        <CON_ID>2202701</CON_ID>
+                        <DEFINITION_SOURCE>Source =&gt; Name: NCI,</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </Representation>
+            <PermissibleValues/>
+            <ValueDomainConcepts/>
+        </VALUEDOMAIN>
+        <REFERENCEDOCUMENTSLIST>
+            <REFERENCEDOCUMENTSLIST_ITEM>
+                <Name>Age</Name>
+                <OrganizationName NULL="TRUE"/>
+                <DocumentType>Preferred Question Text</DocumentType>
+                <DocumentText>Age</DocumentText>
+                <URL NULL="TRUE"/>
+                <Language>ENGLISH</Language>
+                <DisplayOrder NULL="TRUE"/>
+            </REFERENCEDOCUMENTSLIST_ITEM>
+        </REFERENCEDOCUMENTSLIST>
+        <CLASSIFICATIONSLIST/>
+        <ALTERNATENAMELIST/>
+        <DATAELEMENTDERIVATION>
+            <DerivationType>CALCULATED</DerivationType>
+            <DerivationTypeDescription>CALCULATED</DerivationTypeDescription>
+            <Methods>Round to the whole number, no decimals.</Methods>
+            <Rule>Examination age = Examination date - Date of patient/participant birth.</Rule>
+            <ConcatenationCharacter NULL="TRUE"/>
+            <ComponentDataElementsList>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2004170</PublicId>
+                    <LongName>Evaluation Date</LongName>
+                    <PreferredName>EVAL_DT</PreferredName>
+                    <PreferredDefinition>The date of the evaluation, procedure or visit that yielded data.
+                    </PreferredDefinition>
+                    <Version>3</Version>
+                    <WorkflowStatus>RELEASED</WorkflowStatus>
+                    <ContextName>CCR</ContextName>
+                    <DisplayOrder>2</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>793</PublicId>
+                    <LongName>Patient Birth Date</LongName>
+                    <PreferredName>PT_BIRTH_DT</PreferredName>
+                    <PreferredDefinition>the month, day and year on which the patient/participant was born.
+                    </PreferredDefinition>
+                    <Version>4</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>CTEP</ContextName>
+                    <DisplayOrder>1</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+            </ComponentDataElementsList>
+        </DATAELEMENTDERIVATION>
+    </DataElement>
+    <DataElement num="3">
+        <PUBLICID>2261932</PUBLICID>
+        <LONGNAME>Age At Death Derived in Years Number</LONGNAME>
+        <PREFERREDNAME>AGE_DEATH_DERIV_NUM</PREFERREDNAME>
+        <PREFERREDDEFINITION>Value to represent the age of a person at the time of death, expressed in number of
+            years.
+        </PREFERREDDEFINITION>
+        <VERSION>1</VERSION>
+        <WORKFLOWSTATUS>RELEASED</WORKFLOWSTATUS>
+        <CONTEXTNAME>CCR</CONTEXTNAME>
+        <CONTEXTVERSION>1</CONTEXTVERSION>
+        <ORIGIN NULL="TRUE"/>
+        <REGISTRATIONSTATUS>Qualified</REGISTRATIONSTATUS>
+        <DATAELEMENTCONCEPT>
+            <PublicId>2261930</PublicId>
+            <PreferredName>AGE_DEATH</PreferredName>
+            <PreferredDefinition>Age of a person at the time of death, stated in years since birth until death.
+            </PreferredDefinition>
+            <LongName>Age At Death</LongName>
+            <Version>1</Version>
+            <WorkflowStatus>RELEASED</WorkflowStatus>
+            <ContextName>CCR</ContextName>
+            <ContextVersion>1</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2008532</PublicId>
+                <ContextName>CTEP</ContextName>
+                <ContextVersion>2.31</ContextVersion>
+                <PreferredName>INDS</PreferredName>
+                <Version>1</Version>
+                <LongName>Individuals</LongName>
+            </ConceptualDomain>
+            <ObjectClass>
+                <PublicId>2261926</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C25150</PreferredName>
+                <Version>1</Version>
+                <LongName>Age</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25150</PREFERRED_NAME>
+                        <LONG_NAME>Age</LONG_NAME>
+                        <CON_ID>2202837</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </ObjectClass>
+            <Property>
+                <PublicId>2261928</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C25427:C28554</PreferredName>
+                <Version>1</Version>
+                <LongName>At Death</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25427</PREFERRED_NAME>
+                        <LONG_NAME>At</LONG_NAME>
+                        <CON_ID>2261927</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>No</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>1</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C28554</PREFERRED_NAME>
+                        <LONG_NAME>Death</LONG_NAME>
+                        <CON_ID>2202731</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </Property>
+            <ObjectClassQualifier NULL="TRUE"/>
+            <PropertyQualifier NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+        </DATAELEMENTCONCEPT>
+        <VALUEDOMAIN>
+            <PublicId>2017173</PublicId>
+            <PreferredName>PT_AGE_YR</PreferredName>
+            <PreferredDefinition>Patient age expressed in number of years since birth.</PreferredDefinition>
+            <LongName>Patient Age in Years</LongName>
+            <Version>3.1</Version>
+            <WorkflowStatus>RELEASED</WorkflowStatus>
+            <ContextName>CCR</ContextName>
+            <ContextVersion>1</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2008532</PublicId>
+                <ContextName>CTEP</ContextName>
+                <ContextVersion>2.31</ContextVersion>
+                <PreferredName>INDS</PreferredName>
+                <Version>1</Version>
+                <LongName>Individuals</LongName>
+            </ConceptualDomain>
+            <Datatype>NUMBER</Datatype>
+            <ValueDomainType>NonEnumerated</ValueDomainType>
+            <UnitOfMeasure NULL="TRUE"/>
+            <DisplayFormat NULL="TRUE"/>
+            <MaximumLength>5</MaximumLength>
+            <MinimumLength>3</MinimumLength>
+            <DecimalPlace>2</DecimalPlace>
+            <CharacterSetName NULL="TRUE"/>
+            <MaximumValue NULL="TRUE"/>
+            <MinimumValue NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+            <Representation>
+                <PublicId>2691459</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C25150:C29848:C25337</PreferredName>
+                <Version>1</Version>
+                <LongName>Age Year Number</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25150</PREFERRED_NAME>
+                        <LONG_NAME>Age</LONG_NAME>
+                        <CON_ID>2202837</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>No</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>2</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C29848</PREFERRED_NAME>
+                        <LONG_NAME>Year</LONG_NAME>
+                        <CON_ID>2203986</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>No</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>1</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25337</PREFERRED_NAME>
+                        <LONG_NAME>Number</LONG_NAME>
+                        <CON_ID>2202701</CON_ID>
+                        <DEFINITION_SOURCE>Source =&gt; Name: NCI,</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </Representation>
+            <PermissibleValues/>
+            <ValueDomainConcepts/>
+        </VALUEDOMAIN>
+        <REFERENCEDOCUMENTSLIST>
+            <REFERENCEDOCUMENTSLIST_ITEM>
+                <Name>Age at Death</Name>
+                <OrganizationName NULL="TRUE"/>
+                <DocumentType>Preferred Question Text</DocumentType>
+                <DocumentText>Age at Death</DocumentText>
+                <URL NULL="TRUE"/>
+                <Language>ENGLISH</Language>
+                <DisplayOrder NULL="TRUE"/>
+            </REFERENCEDOCUMENTSLIST_ITEM>
+        </REFERENCEDOCUMENTSLIST>
+        <CLASSIFICATIONSLIST>
+            <CLASSIFICATIONSLIST_ITEM>
+                <ClassificationScheme>
+                    <PublicId>2465726</PublicId>
+                    <ContextName>caBIG</ContextName>
+                    <ContextVersion>1</ContextVersion>
+                    <PreferredName>RESERVED FOR SENTINEL MONITOR</PreferredName>
+                    <Version>1</Version>
+                </ClassificationScheme>
+                <ClassificationSchemeItemName>Monitor for TRAINEE01</ClassificationSchemeItemName>
+                <ClassificationSchemeItemType>CATEGORY_TYPE</ClassificationSchemeItemType>
+                <CsiPublicId>2812195</CsiPublicId>
+                <CsiVersion>1</CsiVersion>
+            </CLASSIFICATIONSLIST_ITEM>
+            <CLASSIFICATIONSLIST_ITEM>
+                <ClassificationScheme>
+                    <PublicId>2182125</PublicId>
+                    <ContextName>CCR</ContextName>
+                    <ContextVersion>1</ContextVersion>
+                    <PreferredName>CCR Implementation</PreferredName>
+                    <Version>1</Version>
+                </ClassificationScheme>
+                <ClassificationSchemeItemName>C3D</ClassificationSchemeItemName>
+                <ClassificationSchemeItemType>USAGE_TYPE</ClassificationSchemeItemType>
+                <CsiPublicId>2811673</CsiPublicId>
+                <CsiVersion>1</CsiVersion>
+            </CLASSIFICATIONSLIST_ITEM>
+            <CLASSIFICATIONSLIST_ITEM>
+                <ClassificationScheme>
+                    <PublicId>2008601</PublicId>
+                    <ContextName>CCR</ContextName>
+                    <ContextVersion>1</ContextVersion>
+                    <PreferredName>C3D Domain</PreferredName>
+                    <Version>1</Version>
+                </ClassificationScheme>
+                <ClassificationSchemeItemName>CCR</ClassificationSchemeItemName>
+                <ClassificationSchemeItemType>C3D</ClassificationSchemeItemType>
+                <CsiPublicId>2811685</CsiPublicId>
+                <CsiVersion>1</CsiVersion>
+            </CLASSIFICATIONSLIST_ITEM>
+        </CLASSIFICATIONSLIST>
+        <ALTERNATENAMELIST/>
+        <DATAELEMENTDERIVATION>
+            <DerivationType>CALCULATED</DerivationType>
+            <DerivationTypeDescription>CALCULATED</DerivationTypeDescription>
+            <Methods>Subtract Birth date from Death date; divide by 365 to yield person age at the time of death.
+            </Methods>
+            <Rule>Age at death is the age (in years) of a person on the date of death.</Rule>
+            <ConcatenationCharacter NULL="TRUE"/>
+            <ComponentDataElementsList>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2004152</PublicId>
+                    <LongName>Death Date</LongName>
+                    <PreferredName>DEATH_DT</PreferredName>
+                    <PreferredDefinition>The actual date of a patient's/participant's death.</PreferredDefinition>
+                    <Version>3</Version>
+                    <WorkflowStatus>RELEASED</WorkflowStatus>
+                    <ContextName>CCR</ContextName>
+                    <DisplayOrder>2</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>793</PublicId>
+                    <LongName>Patient Birth Date</LongName>
+                    <PreferredName>PT_BIRTH_DT</PreferredName>
+                    <PreferredDefinition>the month, day and year on which the patient/participant was born.
+                    </PreferredDefinition>
+                    <Version>4</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>CTEP</ContextName>
+                    <DisplayOrder>1</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+            </ComponentDataElementsList>
+        </DATAELEMENTDERIVATION>
+    </DataElement>
+    <DataElement num="19">
+        <PUBLICID>3265511</PUBLICID>
+        <LONGNAME>Study Activity Category Code Category ISO 21090 CD v1.0 ComplexType</LONGNAME>
+        <PREFERREDNAME>Study Activity Category Code</PREFERREDNAME>
+        <PREFERREDDEFINITION>A detailed examination, analysis, or critical inspection of a subject designed to discover
+            facts about it.:An action taken in pursuit of an objective; the state of being active._This term is used
+            informally to mean a class of things.:A symbol or combination of symbols which is given an arbitrary meaning
+            within a systematized collection of concepts used for data representation._The code that identifies the kind
+            of activity, drawn from a controlled list of possible values, which groups similar or related activities
+            together. Represented using ISO 21090 CD v1.0.
+        </PREFERREDDEFINITION>
+        <VERSION>1</VERSION>
+        <WORKFLOWSTATUS>DRAFT NEW</WORKFLOWSTATUS>
+        <CONTEXTNAME>caBIG</CONTEXTNAME>
+        <CONTEXTVERSION>1</CONTEXTVERSION>
+        <ORIGIN>ISO:International Organization for Standardization</ORIGIN>
+        <REGISTRATIONSTATUS NULL="TRUE"/>
+        <DATAELEMENTCONCEPT>
+            <PublicId>2868071</PublicId>
+            <PreferredName>2867622v1.0:2867794v1.0</PreferredName>
+            <PreferredDefinition>A detailed examination, analysis, or critical inspection of a subject designed to
+                discover facts about it.:An action taken in pursuit of an objective; the state of being active._This
+                term is used informally to mean a class of things.:A symbol or combination of symbols which is given an
+                arbitrary meaning within a systematized collection of concepts used for data representation.
+            </PreferredDefinition>
+            <LongName>Study Activity Category Code</LongName>
+            <Version>1</Version>
+            <WorkflowStatus>RELEASED</WorkflowStatus>
+            <ContextName>caBIG</ContextName>
+            <ContextVersion>1</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2222502</PublicId>
+                <ContextName>caCORE</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>UML DEFAULT CD</PreferredName>
+                <Version>1</Version>
+                <LongName>UML DEFAULT CD</LongName>
+            </ConceptualDomain>
+            <ObjectClass>
+                <PublicId>2867622</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C63536:C43431</PreferredName>
+                <Version>1</Version>
+                <LongName>Study Activity</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C63536</PREFERRED_NAME>
+                        <LONG_NAME>Study</LONG_NAME>
+                        <CON_ID>2553063</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>No</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>1</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C43431</PREFERRED_NAME>
+                        <LONG_NAME>Activity</LONG_NAME>
+                        <CON_ID>2222740</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </ObjectClass>
+            <Property>
+                <PublicId>2867794</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C25372:C25162</PreferredName>
+                <Version>1</Version>
+                <LongName>Category Code</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25372</PREFERRED_NAME>
+                        <LONG_NAME>Category</LONG_NAME>
+                        <CON_ID>2203876</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>No</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>1</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25162</PREFERRED_NAME>
+                        <LONG_NAME>Code</LONG_NAME>
+                        <CON_ID>2203865</CON_ID>
+                        <DEFINITION_SOURCE>Source =&gt; Name: NCI,</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </Property>
+            <ObjectClassQualifier NULL="TRUE"/>
+            <PropertyQualifier NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+        </DATAELEMENTCONCEPT>
+        <VALUEDOMAIN>
+            <PublicId>2959443</PublicId>
+            <PreferredName>2959443v1.0</PreferredName>
+            <PreferredDefinition>The code that identifies the kind of activity, drawn from a controlled list of possible
+                values, which groups similar or related activities together.
+            </PreferredDefinition>
+            <LongName>Category</LongName>
+            <Version>1</Version>
+            <WorkflowStatus>DRAFT NEW</WorkflowStatus>
+            <ContextName>caBIG</ContextName>
+            <ContextVersion>1</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2008528</PublicId>
+                <ContextName>CTEP</ContextName>
+                <ContextVersion>2.31</ContextVersion>
+                <PreferredName>PROT_ADM</PreferredName>
+                <Version>1</Version>
+                <LongName>Protocol Administration</LongName>
+            </ConceptualDomain>
+            <Datatype>ISO21090CDv1.0</Datatype>
+            <ValueDomainType>Enumerated</ValueDomainType>
+            <UnitOfMeasure NULL="TRUE"/>
+            <DisplayFormat NULL="TRUE"/>
+            <MaximumLength NULL="TRUE"/>
+            <MinimumLength NULL="TRUE"/>
+            <DecimalPlace NULL="TRUE"/>
+            <CharacterSetName NULL="TRUE"/>
+            <MaximumValue NULL="TRUE"/>
+            <MinimumValue NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+            <Representation>
+                <PublicId>2433877</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C25372</PreferredName>
+                <Version>1</Version>
+                <LongName>Category</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C25372</PREFERRED_NAME>
+                        <LONG_NAME>Category</LONG_NAME>
+                        <CON_ID>2203876</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </Representation>
+            <PermissibleValues>
+                <PermissibleValues_ITEM>
+                    <VALIDVALUE>Intervention</VALIDVALUE>
+                    <VALUEMEANING>Interventions</VALUEMEANING>
+                    <MEANINGDESCRIPTION>An action or ministration that produces an effect or that is intended to alter
+                        the course of a pathologic process.
+                    </MEANINGDESCRIPTION>
+                    <MEANINGCONCEPTS>C16197</MEANINGCONCEPTS>
+                    <PVBEGINDATE>12/8/2009 0:0:0</PVBEGINDATE>
+                    <PVENDDATE NULL="TRUE"/>
+                    <VMPUBLICID>2965172</VMPUBLICID>
+                    <VMVERSION>1</VMVERSION>
+                </PermissibleValues_ITEM>
+                <PermissibleValues_ITEM>
+                    <VALIDVALUE>Eligibility Criterion</VALIDVALUE>
+                    <VALUEMEANING>Inclusion</VALUEMEANING>
+                    <MEANINGDESCRIPTION>The addition of somebody or something to, or the presence of somebody or
+                        something in, a group or mixture, particularly, a passive, usually temporary, product of cell
+                        activity within the cytoplasm or nucleus.
+                    </MEANINGDESCRIPTION>
+                    <MEANINGCONCEPTS>C25532</MEANINGCONCEPTS>
+                    <PVBEGINDATE>11/9/2009 0:0:0</PVBEGINDATE>
+                    <PVENDDATE NULL="TRUE"/>
+                    <VMPUBLICID>2579170</VMPUBLICID>
+                    <VMVERSION>1</VMVERSION>
+                </PermissibleValues_ITEM>
+            </PermissibleValues>
+            <ValueDomainConcepts/>
+        </VALUEDOMAIN>
+        <REFERENCEDOCUMENTSLIST>
+            <REFERENCEDOCUMENTSLIST_ITEM>
+                <Name>Study Activity Category Code</Name>
+                <OrganizationName NULL="TRUE"/>
+                <DocumentType>Preferred Question Text</DocumentType>
+                <DocumentText>Study Activity Category Code</DocumentText>
+                <URL NULL="TRUE"/>
+                <Language>ENGLISH</Language>
+                <DisplayOrder NULL="TRUE"/>
+            </REFERENCEDOCUMENTSLIST_ITEM>
+        </REFERENCEDOCUMENTSLIST>
+        <CLASSIFICATIONSLIST/>
+        <ALTERNATENAMELIST/>
+        <DATAELEMENTDERIVATION>
+            <DerivationType>COMPOUND</DerivationType>
+            <DerivationTypeDescription>concept derivation rule with multiple concepts</DerivationTypeDescription>
+            <Methods NULL="TRUE"/>
+            <Rule>Use these 18 data elements when transmitting instances of this data element using the CD datatype.
+            </Rule>
+            <ConcatenationCharacter NULL="TRUE"/>
+            <ComponentDataElementsList>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930142</PublicId>
+                    <LongName>Concept Identifier Value Set Version xsd.string</LongName>
+                    <PreferredName>2928641v1.0:2861810v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._The information contained in a data field. It may represent a numeric quantity, a textual
+                        characterization, a date or time measurement, or some other state, depending on the nature of
+                        the attribute.:A group of things of the same kind that belong together and are so used.:A form
+                        or variant of a type or original; one of a sequence of copies of a program, each incorporating
+                        new modifications._Character strings in XML.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>18</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930141</PublicId>
+                    <LongName>Concept Identifier Value Set xsd.string</LongName>
+                    <PreferredName>2928640v1.0:2861810v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._The information contained in a data field. It may represent a numeric quantity, a textual
+                        characterization, a date or time measurement, or some other state, depending on the nature of
+                        the attribute.:A group of things of the same kind that belong together and are so
+                        used._Character strings in XML.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>17</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930454</PublicId>
+                    <LongName>Concept Identifier Begin Valid Time xsd.string</LongName>
+                    <PreferredName>2928954v1.0:2861810v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._Have a beginning, in a temporal, spatial, or evaluative sense; the point in space or time
+                        where something begins.:Allowable, usable, or acceptable.:The continuum of experience in which
+                        events pass from the future through the present to the past._Character strings in XML.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>16</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930455</PublicId>
+                    <LongName>Concept Identifier End Valid Time xsd.string</LongName>
+                    <PreferredName>2928955v1.0:2861810v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._The point or place at which something terminates in time, space, or extent.:Allowable,
+                        usable, or acceptable.:The continuum of experience in which events pass from the future through
+                        the present to the past._Character strings in XML.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>15</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930453</PublicId>
+                    <LongName>Concept Identifier Update Mode UpdateMode</LongName>
+                    <PreferredName>2928953v1.0:2929842v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._Make current; supply with recent information or technology.:A particular functioning
+                        condition or arrangement._Property that allows a sending system to identify the role that the
+                        attribute plays in processing the instance that is being represented.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>14</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930147</PublicId>
+                    <LongName>Concept Identifier Translation ISO21090.CD.v1.0</LongName>
+                    <PreferredName>2928646v1.0:2803170v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._The act or process of rendering from one language into another._Reference concept defined
+                        by a referenced code system.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>13</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930146</PublicId>
+                    <LongName>Concept Identifier Term Source Source ISO21090.CD.v1.0</LongName>
+                    <PreferredName>2928645v1.0:2803170v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._An indicator of the particular group or agency that supplied a specific term.:Where
+                        something is available or from where it originates._Reference concept defined by a referenced
+                        code system.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>12</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930144</PublicId>
+                    <LongName>Concept Identifier Original Text ISO21090.ED.TEXT.v1.0</LongName>
+                    <PreferredName>2928643v1.0:2846976v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._Preceding all others in time or being as first made or performed.:The words of something
+                        written._Constrains ED so that it may only contain plain text.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>DRAFT NEW</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>11</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930452</PublicId>
+                    <LongName>Concept Identifier Local Restriction Identifier xsd.string</LongName>
+                    <PreferredName>2928952v1.0:2861810v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._Of or belonging to a restricted area or locality.:Anything that limits; a limitation.:One
+                        or more characters used to identify, name, or characterize the nature, properties, or contents
+                        of a thing._Character strings in XML.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>10</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930451</PublicId>
+                    <LongName>Concept Identifier Null Local Restriction NullFlavor</LongName>
+                    <PreferredName>2928951v1.0:2929833v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._A special value that may be stored in some database columns to represent an unknown,
+                        missing, not applicable, or undefined value.:Of or belonging to a restricted area or
+                        locality.:Anything that limits; a limitation._If the value is null, indicates the reason.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>DRAFT NEW</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>9</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930143</PublicId>
+                    <LongName>Concept Identifier Display Name ISO21090.ST.v1.0</LongName>
+                    <PreferredName>2928642v1.0:2803207v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._Exhibit, present, or demonstrate for viewing.:The words or language units by which a
+                        thing is known._Character string datatype stands for text data.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>DRAFT NEW</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>8</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930456</PublicId>
+                    <LongName>Concept Identifier Event Identifier Base ISO21090.Uid.v1.0</LongName>
+                    <PreferredName>2928956v1.0:2848226v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._Something that happens at a given place and time.:One or more characters used to
+                        identify, name, or characterize the nature, properties, or contents of a thing.:The most
+                        important or necessary part of something._A string that is an identifier, and therefore must be
+                        either a string representation of an OID, a UUID, or a simple token taken from a lsit of
+                        controlled names for the context in which the Uid is used.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>7</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930457</PublicId>
+                    <LongName>Concept Identifier Event Identifier Extension xsd.string</LongName>
+                    <PreferredName>2928957v1.0:2861810v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._Something that happens at a given place and time.:One or more characters used to
+                        identify, name, or characterize the nature, properties, or contents of a thing.:An addition to
+                        the length of something; the spreading of something into new regions._Character strings in XML.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>6</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930145</PublicId>
+                    <LongName>Concept Identifier Reason Coding CodingRationale</LongName>
+                    <PreferredName>2928644v1.0:2929960v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._An explanation of the cause of some phenomenon or action.:The activity of implementing
+                        rules that are used to map the elements of one set onto the elements of another set, usually on
+                        a one-to-one basis._Reason item provided.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>RETIRED ARCHIVED</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>5</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930140</PublicId>
+                    <LongName>Concept Identifier Code System Version xsd.string</LongName>
+                    <PreferredName>2928639v1.0:2861810v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._A systematized collection of concepts that define corresponding codes.:A form or variant
+                        of a type or original; one of a sequence of copies of a program, each incorporating new
+                        modifications._Character strings in XML.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>DRAFT NEW</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>4</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930139</PublicId>
+                    <LongName>Concept Identifier Code System Name xsd.string</LongName>
+                    <PreferredName>2928638v1.0:2861810v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._A systematized collection of concepts that define corresponding codes.:The words or
+                        language units by which a thing is known._Character strings in XML.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>DRAFT NEW</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>3</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930138</PublicId>
+                    <LongName>Concept Identifier Code System ISO21090.Uid.v1.0</LongName>
+                    <PreferredName>2928637v1.0:2848226v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._A systematized collection of concepts that define corresponding codes._A string that is
+                        an identifier, and therefore must be either a string representation of an OID, a UUID, or a
+                        simple token taken from a lsit of controlled names for the context in which the Uid is used.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>DRAFT NEW</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>2</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+                <ComponentDataElementsList_ITEM>
+                    <PublicId>2930137</PublicId>
+                    <LongName>Concept Identifier Code xsd.string</LongName>
+                    <PreferredName>2928636v1.0:2861810v1.0</PreferredName>
+                    <PreferredDefinition>A unit of knowledge created by a unique combination of characteristics.:One or
+                        more characters used to identify, name, or characterize the nature, properties, or contents of a
+                        thing._A system of numbered categories for representation of data._Character strings in XML.
+                    </PreferredDefinition>
+                    <Version>1</Version>
+                    <WorkflowStatus>DRAFT NEW</WorkflowStatus>
+                    <ContextName>caBIG</ContextName>
+                    <DisplayOrder>1</DisplayOrder>
+                </ComponentDataElementsList_ITEM>
+            </ComponentDataElementsList>
+        </DATAELEMENTDERIVATION>
+    </DataElement>
+    <DataElement num="791">
+        <PUBLICID>3109848</PUBLICID>
+        <LONGNAME>Glaucoma Patient Self-Report Personal Medical History Yes or No Response</LONGNAME>
+        <PREFERREDNAME>3109846v1.0:3108967v1.0</PREFERREDNAME>
+        <PREFERREDDEFINITION>An ocular disease, occurring in many forms, having as its primary characteristics an
+            unstable or a sustained increase in the intraocular pressure which the eye cannot withstand without damage
+            to its structure or impairment of its function. The consequences of the increased pressure may be manifested
+            in a variety of symptoms, depending upon type and severity, such as excavation of the optic disk, hardness
+            of the eyeball, corneal anesthesia, reduced visual acuity, seeing of colored halos around lights, disturbed
+            dark adaptation, visual field defects, and headaches. (Dictionary of Visual Science, 4th ed). Subjective
+            reports made by a patient. An account of all medical events and problems a person has experienced. A caDSR
+            representation term that is used to indicate a question with permissible values of yes/no
+        </PREFERREDDEFINITION>
+        <VERSION>1</VERSION>
+        <WORKFLOWSTATUS>RELEASED</WORKFLOWSTATUS>
+        <CONTEXTNAME>NIDCR</CONTEXTNAME>
+        <CONTEXTVERSION>1</CONTEXTVERSION>
+        <ORIGIN NULL="TRUE"/>
+        <REGISTRATIONSTATUS NULL="TRUE"/>
+        <DATAELEMENTCONCEPT>
+            <PublicId>3109846</PublicId>
+            <PreferredName>3109844v1.0:2793065v1.0</PreferredName>
+            <PreferredDefinition>An ocular disease, occurring in many forms, having as its primary characteristics an
+                unstable or a sustained increase in the intraocular pressure which the eye cannot withstand without
+                damage to its structure or impairment of its function. The consequences of the increased pressure may be
+                manifested in a variety of symptoms, depending upon type and severity, such as excavation of the optic
+                disk, hardness of the eyeball, corneal anesthesia, reduced visual acuity, seeing of colored halos around
+                lights, disturbed dark adaptation, visual field defects, and headaches. (Dictionary of Visual Science,
+                4th ed). Subjective reports made by a patient. An account of all medical events and problems a person
+                has experienced.
+            </PreferredDefinition>
+            <LongName>Glaucoma Patient Self-Report Personal Medical History</LongName>
+            <Version>1</Version>
+            <WorkflowStatus>RELEASED</WorkflowStatus>
+            <ContextName>NIDCR</ContextName>
+            <ContextVersion>1</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2008551</PublicId>
+                <ContextName>CTEP</ContextName>
+                <ContextVersion>2.31</ContextVersion>
+                <PreferredName>ASSESS</PreferredName>
+                <Version>1</Version>
+                <LongName>Assessments</LongName>
+            </ConceptualDomain>
+            <ObjectClass>
+                <PublicId>3109844</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C26782</PreferredName>
+                <Version>1</Version>
+                <LongName>Glaucoma</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C26782</PREFERRED_NAME>
+                        <LONG_NAME>Glaucoma</LONG_NAME>
+                        <CON_ID>2203738</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </ObjectClass>
+            <Property>
+                <PublicId>2793065</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C21089:C18772</PreferredName>
+                <Version>1</Version>
+                <LongName>Patient Self-Report Personal Medical History</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C21089</PREFERRED_NAME>
+                        <LONG_NAME>Patient Self-Report</LONG_NAME>
+                        <CON_ID>2234887</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>No</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>1</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C18772</PREFERRED_NAME>
+                        <LONG_NAME>Personal Medical History</LONG_NAME>
+                        <CON_ID>2202879</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </Property>
+            <ObjectClassQualifier NULL="TRUE"/>
+            <PropertyQualifier NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+        </DATAELEMENTCONCEPT>
+        <VALUEDOMAIN>
+            <PublicId>3108967</PublicId>
+            <PreferredName>C49487:C49488:3108967v1.0</PreferredName>
+            <PreferredDefinition>A caDSR representation term that is used to indicate a question with permissible values
+                of yes/no
+            </PreferredDefinition>
+            <LongName>Yes or No Response</LongName>
+            <Version>1</Version>
+            <WorkflowStatus>RELEASED</WorkflowStatus>
+            <ContextName>NIDCR</ContextName>
+            <ContextVersion>1</ContextVersion>
+            <ConceptualDomain>
+                <PublicId>2008551</PublicId>
+                <ContextName>CTEP</ContextName>
+                <ContextVersion>2.31</ContextVersion>
+                <PreferredName>ASSESS</PreferredName>
+                <Version>1</Version>
+                <LongName>Assessments</LongName>
+            </ConceptualDomain>
+            <Datatype>CHARACTER</Datatype>
+            <ValueDomainType>Enumerated</ValueDomainType>
+            <UnitOfMeasure NULL="TRUE"/>
+            <DisplayFormat NULL="TRUE"/>
+            <MaximumLength NULL="TRUE"/>
+            <MinimumLength NULL="TRUE"/>
+            <DecimalPlace NULL="TRUE"/>
+            <CharacterSetName NULL="TRUE"/>
+            <MaximumValue NULL="TRUE"/>
+            <MinimumValue NULL="TRUE"/>
+            <Origin NULL="TRUE"/>
+            <Representation>
+                <PublicId>2421125</PublicId>
+                <ContextName>caBIG</ContextName>
+                <ContextVersion>1</ContextVersion>
+                <PreferredName>C38147</PreferredName>
+                <Version>1</Version>
+                <LongName>Ind-2</LongName>
+                <ConceptDetails>
+                    <ConceptDetails_ITEM>
+                        <PREFERRED_NAME>C38147</PREFERRED_NAME>
+                        <LONG_NAME>Yes or No Response</LONG_NAME>
+                        <CON_ID>2204645</CON_ID>
+                        <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                        <ORIGIN>NCI Thesaurus</ORIGIN>
+                        <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                        <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                        <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                    </ConceptDetails_ITEM>
+                </ConceptDetails>
+            </Representation>
+            <PermissibleValues>
+                <PermissibleValues_ITEM>
+                    <VALIDVALUE>No [0]</VALIDVALUE>
+                    <VALUEMEANING>No</VALUEMEANING>
+                    <MEANINGDESCRIPTION>The non-affirmative response to a question.</MEANINGDESCRIPTION>
+                    <MEANINGCONCEPTS>C49487</MEANINGCONCEPTS>
+                    <PVBEGINDATE>6/11/2010 0:0:0</PVBEGINDATE>
+                    <PVENDDATE NULL="TRUE"/>
+                    <VMPUBLICID>2559515</VMPUBLICID>
+                    <VMVERSION>1</VMVERSION>
+                </PermissibleValues_ITEM>
+                <PermissibleValues_ITEM>
+                    <VALIDVALUE>Yes [0]</VALIDVALUE>
+                    <VALUEMEANING>Yes</VALUEMEANING>
+                    <MEANINGDESCRIPTION>The affirmative response to a question or activity.</MEANINGDESCRIPTION>
+                    <MEANINGCONCEPTS>C49488</MEANINGCONCEPTS>
+                    <PVBEGINDATE>6/11/2010 0:0:0</PVBEGINDATE>
+                    <PVENDDATE NULL="TRUE"/>
+                    <VMPUBLICID>2560453</VMPUBLICID>
+                    <VMVERSION>1</VMVERSION>
+                </PermissibleValues_ITEM>
+            </PermissibleValues>
+            <ValueDomainConcepts>
+                <ValueDomainConcepts_ITEM>
+                    <PREFERRED_NAME>C49488</PREFERRED_NAME>
+                    <LONG_NAME>Yes</LONG_NAME>
+                    <CON_ID>2451557</CON_ID>
+                    <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                    <ORIGIN>NCI Thesaurus</ORIGIN>
+                    <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                    <PRIMARY_FLAG_IND>No</PRIMARY_FLAG_IND>
+                    <DISPLAY_ORDER>1</DISPLAY_ORDER>
+                </ValueDomainConcepts_ITEM>
+                <ValueDomainConcepts_ITEM>
+                    <PREFERRED_NAME>C49487</PREFERRED_NAME>
+                    <LONG_NAME>No</LONG_NAME>
+                    <CON_ID>2451556</CON_ID>
+                    <DEFINITION_SOURCE>NCI</DEFINITION_SOURCE>
+                    <ORIGIN>NCI Thesaurus</ORIGIN>
+                    <EVS_SOURCE>NCI_CONCEPT_CODE</EVS_SOURCE>
+                    <PRIMARY_FLAG_IND>Yes</PRIMARY_FLAG_IND>
+                    <DISPLAY_ORDER>0</DISPLAY_ORDER>
+                </ValueDomainConcepts_ITEM>
+            </ValueDomainConcepts>
+        </VALUEDOMAIN>
+        <REFERENCEDOCUMENTSLIST>
+            <REFERENCEDOCUMENTSLIST_ITEM>
+                <Name>Glaucoma</Name>
+                <OrganizationName NULL="TRUE"/>
+                <DocumentType>Preferred Question Text</DocumentType>
+                <DocumentText>Glaucoma</DocumentText>
+                <URL NULL="TRUE"/>
+                <Language>ENGLISH</Language>
+                <DisplayOrder NULL="TRUE"/>
+            </REFERENCEDOCUMENTSLIST_ITEM>
+        </REFERENCEDOCUMENTSLIST>
+        <CLASSIFICATIONSLIST/>
+        <ALTERNATENAMELIST/>
+        <DATAELEMENTDERIVATION>
+            <DerivationType NULL="TRUE"/>
+            <DerivationTypeDescription NULL="TRUE"/>
+            <Methods NULL="TRUE"/>
+            <Rule NULL="TRUE"/>
+            <ConcatenationCharacter NULL="TRUE"/>
+            <ComponentDataElementsList NULL="TRUE"/>
+        </DATAELEMENTDERIVATION>
+    </DataElement>
+</DataElementsList>
+

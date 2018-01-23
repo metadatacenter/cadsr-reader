@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+ <xs:element name='ALTERNATENAMELIST'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='ALTERNATENAMELIST_ITEM' minOccurs='0' maxOccurs='unbounded'/>
+   </xs:sequence>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ALTERNATENAMELIST_ITEM'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='ContextName'/>
+    <xs:element ref='ContextVersion'/>
+    <xs:element ref='AlternateName'/>
+    <xs:element ref='AlternateNameType'/>
+    <xs:element ref='Language'/>
+   </xs:sequence>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='AlternateName'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='AlternateNameType'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='CharacterSetName'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ClassificationScheme'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PublicId'/>
+    <xs:element ref='ContextName'/>
+    <xs:element ref='ContextVersion'/>
+    <xs:element ref='PreferredName'/>
+    <xs:element ref='Version'/>
+   </xs:sequence>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ClassificationSchemeItemName'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ClassificationSchemeItemType'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='CLASSIFICATIONSLIST'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='CLASSIFICATIONSLIST_ITEM' minOccurs='0' maxOccurs='unbounded'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='CLASSIFICATIONSLIST_ITEM'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='ClassificationScheme'/>
+    <xs:element ref='ClassificationSchemeItemName'/>
+    <xs:element ref='ClassificationSchemeItemType'/>
+    <xs:element ref='CsiPublicId'/>
+    <xs:element ref='CsiVersion'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ComponentDataElementsList'>
+  <xs:complexType>
+   <xs:sequence minOccurs='0' maxOccurs='unbounded'>
+    <xs:element ref='ComponentDataElementsList_ITEM'/>
+   </xs:sequence>
+   <xs:attribute name='NULL' type='xs:NMTOKEN' use='optional'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ComponentDataElementsList_ITEM'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PublicId'/>
+    <xs:element ref='LongName'/>
+    <xs:element ref='PreferredName'/>
+    <xs:element ref='PreferredDefinition'/>
+    <xs:element ref='Version'/>
+    <xs:element ref='WorkflowStatus'/>
+    <xs:element ref='ContextName'/>
+    <xs:element ref='DisplayOrder'/>
+   </xs:sequence>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='CON_ID'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ConcatenationCharacter'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ConceptDetails'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='ConceptDetails_ITEM' minOccurs='0' maxOccurs='unbounded'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ConceptDetails_ITEM'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PREFERRED_NAME'/>
+    <xs:element ref='LONG_NAME'/>
+    <xs:element ref='CON_ID'/>
+    <xs:element ref='DEFINITION_SOURCE'/>
+    <xs:element ref='ORIGIN'/>
+    <xs:element ref='EVS_SOURCE'/>
+    <xs:element ref='PRIMARY_FLAG_IND'/>
+    <xs:element ref='DISPLAY_ORDER'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ConceptualDomain'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PublicId'/>
+    <xs:element ref='ContextName'/>
+    <xs:element ref='ContextVersion'/>
+    <xs:element ref='PreferredName'/>
+    <xs:element ref='Version'/>
+    <xs:element ref='LongName'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='CONTEXTNAME'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ContextName'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='CONTEXTVERSION'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ContextVersion'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='CsiPublicId'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='CsiVersion'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DataElement'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PUBLICID'/>
+    <xs:element ref='LONGNAME'/>
+    <xs:element ref='PREFERREDNAME'/>
+    <xs:element ref='PREFERREDDEFINITION'/>
+    <xs:element ref='VERSION'/>
+    <xs:element ref='WORKFLOWSTATUS'/>
+    <xs:element ref='CONTEXTNAME'/>
+    <xs:element ref='CONTEXTVERSION'/>
+    <xs:element ref='ORIGIN'/>
+    <xs:element ref='REGISTRATIONSTATUS'/>
+    <xs:element ref='DATAELEMENTCONCEPT'/>
+    <xs:element ref='VALUEDOMAIN'/>
+    <xs:element ref='REFERENCEDOCUMENTSLIST'/>
+    <xs:element ref='CLASSIFICATIONSLIST'/>
+    <xs:element ref='ALTERNATENAMELIST'/>
+    <xs:element ref='DATAELEMENTDERIVATION'/>
+   </xs:sequence>
+   <xs:attribute name='num' type='xs:NMTOKEN' use='required'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DATAELEMENTCONCEPT'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PublicId'/>
+    <xs:element ref='PreferredName'/>
+    <xs:element ref='PreferredDefinition'/>
+    <xs:element ref='LongName'/>
+    <xs:element ref='Version'/>
+    <xs:element ref='WorkflowStatus'/>
+    <xs:element ref='ContextName'/>
+    <xs:element ref='ContextVersion'/>
+    <xs:element ref='ConceptualDomain'/>
+    <xs:element ref='ObjectClass'/>
+    <xs:element ref='Property'/>
+    <xs:element ref='ObjectClassQualifier'/>
+    <xs:element ref='PropertyQualifier'/>
+    <xs:element ref='Origin'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DATAELEMENTDERIVATION'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='DerivationType'/>
+    <xs:element ref='DerivationTypeDescription'/>
+    <xs:element ref='Methods'/>
+    <xs:element ref='Rule'/>
+    <xs:element ref='ConcatenationCharacter'/>
+    <xs:element ref='ComponentDataElementsList'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DataElementsList'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='DataElement' minOccurs='0' maxOccurs='unbounded'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='Datatype'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DecimalPlace'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DEFINITION_SOURCE'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DerivationType'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DerivationTypeDescription'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DISPLAY_ORDER'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DisplayFormat'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DisplayOrder'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DocumentText'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='DocumentType'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='EVS_SOURCE'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='Language'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' use='optional'>
+    <xs:simpleType>
+     <xs:restriction base='xs:string'>
+      <xs:enumeration value='TRUE'/>
+     </xs:restriction>
+    </xs:simpleType>
+   </xs:attribute>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='LONG_NAME'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='LONGNAME'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='LongName'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='MaximumLength'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='MaximumValue'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='MEANINGCONCEPTS'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='MEANINGDESCRIPTION'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='Methods'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='MinimumLength'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='MinimumValue'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='Name'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ObjectClass'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PublicId'/>
+    <xs:element ref='ContextName'/>
+    <xs:element ref='ContextVersion'/>
+    <xs:element ref='PreferredName'/>
+    <xs:element ref='Version'/>
+    <xs:element ref='LongName'/>
+    <xs:element ref='ConceptDetails'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ObjectClassQualifier'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='OrganizationName'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN' use='required'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='Origin'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ORIGIN'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' use='optional'>
+    <xs:simpleType>
+     <xs:restriction base='xs:string'>
+      <xs:enumeration value='TRUE'/>
+     </xs:restriction>
+    </xs:simpleType>
+   </xs:attribute>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PermissibleValues'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PermissibleValues_ITEM' minOccurs='0' maxOccurs='unbounded'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PermissibleValues_ITEM'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='VALIDVALUE'/>
+    <xs:element ref='VALUEMEANING'/>
+    <xs:element ref='MEANINGDESCRIPTION'/>
+    <xs:element ref='MEANINGCONCEPTS'/>
+    <xs:element ref='PVBEGINDATE'/>
+    <xs:element ref='PVENDDATE'/>
+    <xs:element ref='VMPUBLICID'/>
+    <xs:element ref='VMVERSION'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PREFERRED_NAME'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PREFERREDDEFINITION'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PreferredDefinition'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PREFERREDNAME'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PreferredName'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PRIMARY_FLAG_IND'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='Property'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PublicId'/>
+    <xs:element ref='ContextName'/>
+    <xs:element ref='ContextVersion'/>
+    <xs:element ref='PreferredName'/>
+    <xs:element ref='Version'/>
+    <xs:element ref='LongName'/>
+    <xs:element ref='ConceptDetails'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PropertyQualifier'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PUBLICID'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PublicId'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' use='optional'>
+    <xs:simpleType>
+     <xs:restriction base='xs:string'>
+      <xs:enumeration value='TRUE'/>
+     </xs:restriction>
+    </xs:simpleType>
+   </xs:attribute>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PVBEGINDATE'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='PVENDDATE'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='REFERENCEDOCUMENTSLIST'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='REFERENCEDOCUMENTSLIST_ITEM' minOccurs='0' maxOccurs='unbounded'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='REFERENCEDOCUMENTSLIST_ITEM'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='Name'/>
+    <xs:element ref='OrganizationName'/>
+    <xs:element ref='DocumentType'/>
+    <xs:element ref='DocumentText'/>
+    <xs:element ref='URL'/>
+    <xs:element ref='Language'/>
+    <xs:element ref='DisplayOrder'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='REGISTRATIONSTATUS'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='Representation'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PublicId'/>
+    <xs:element ref='ContextName'/>
+    <xs:element ref='ContextVersion'/>
+    <xs:element ref='PreferredName'/>
+    <xs:element ref='Version'/>
+    <xs:element ref='LongName'/>
+    <xs:element ref='ConceptDetails'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='Rule'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='UnitOfMeasure'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='URL'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='VALIDVALUE'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='VALUEDOMAIN'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PublicId'/>
+    <xs:element ref='PreferredName'/>
+    <xs:element ref='PreferredDefinition'/>
+    <xs:element ref='LongName'/>
+    <xs:element ref='Version'/>
+    <xs:element ref='WorkflowStatus'/>
+    <xs:element ref='ContextName'/>
+    <xs:element ref='ContextVersion'/>
+    <xs:element ref='ConceptualDomain'/>
+    <xs:element ref='Datatype'/>
+    <xs:element ref='ValueDomainType'/>
+    <xs:element ref='UnitOfMeasure'/>
+    <xs:element ref='DisplayFormat'/>
+    <xs:element ref='MaximumLength'/>
+    <xs:element ref='MinimumLength'/>
+    <xs:element ref='DecimalPlace'/>
+    <xs:element ref='CharacterSetName'/>
+    <xs:element ref='MaximumValue'/>
+    <xs:element ref='MinimumValue'/>
+    <xs:element ref='Origin'/>
+    <xs:element ref='Representation'/>
+    <xs:element ref='PermissibleValues'/>
+    <xs:element ref='ValueDomainConcepts'/>
+   </xs:sequence>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ValueDomainConcepts'>
+  <xs:complexType>
+   <xs:sequence minOccurs='0' maxOccurs='unbounded'>
+    <xs:element ref='ValueDomainConcepts_ITEM'/>
+   </xs:sequence>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ValueDomainConcepts_ITEM'>
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element ref='PREFERRED_NAME'/>
+    <xs:element ref='LONG_NAME'/>
+    <xs:element ref='CON_ID'/>
+    <xs:element ref='DEFINITION_SOURCE'/>
+    <xs:element ref='ORIGIN'/>
+    <xs:element ref='EVS_SOURCE'/>
+    <xs:element ref='PRIMARY_FLAG_IND'/>
+    <xs:element ref='DISPLAY_ORDER'/>
+   </xs:sequence>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='ValueDomainType'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='VALUEMEANING'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='VERSION'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='Version'>
+  <xs:complexType mixed='true'>
+   <xs:attribute name='NULL' type='xs:NMTOKEN'/>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='VMPUBLICID'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='VMVERSION'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='WORKFLOWSTATUS'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+
+ <xs:element name='WorkflowStatus'>
+  <xs:complexType mixed='true'>
+  </xs:complexType>
+ </xs:element>
+</xs:schema>
