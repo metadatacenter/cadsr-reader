@@ -1,9 +1,6 @@
 caDSR Reader
 ============
 
-NOTE: Java 8 must be used to build this project since the JAXB2 Maven plugin is not compatible with Java 9.
-On OS X use the following command to switch: ```export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)```
-
 This project reads XML-encoded [caDSR](https://wiki.nci.nih.gov/display/caDSR/caDSR+Wiki) [11179-based](http://metadata-standards.org/11179/)
 common data elements (CDEs).
 
@@ -31,6 +28,9 @@ was produced semi-automatically from the caDSR-supplied [DTD-encoded schema](htt
 We could not work with the DTD-encoded schema directly because the JAXB binding do not seem to work with DTD-based documents.
 
 #### Building and Running
+
+NOTE: Java 8 must be used to build this project since the JAXB2 Maven plugin is not compatible with Java 9.
+On OS X use the following command to switch: ```export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)```
 
 To build this library you must have the following items installed:
 
