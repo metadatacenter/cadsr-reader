@@ -43,7 +43,7 @@ Get a copy of the latest code:
 
     git clone https://github.com/metadatacenter/cadsr-reader.git
 
-Change into the cadsr-reader directory:
+Change into the ```cadsr-reader``` directory:
 
     cd cadsr-reader 
 
@@ -51,10 +51,10 @@ Then build it with Maven:
 
     mvn clean install
 
-To run:
+To process the includes CDEs in the ```src/main/resources/xml/example``` directory:
 
     mvn exec:java
 
-or
+To process CDEs in a particular directory:
 
     mvn exec:java -Dexec.args="<directory containing CDE XML files>"

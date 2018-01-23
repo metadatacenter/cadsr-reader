@@ -653,7 +653,7 @@ public class CDEXMLInstancesReader
 
   private static void processCADSRPermissibleValues(VALUEDOMAIN cadsrVALUEDOMAIN)
   {
-    System.out.print("[");
+    System.out.print("\"");
 
     List<PermissibleValuesITEM> permissibleValuesITEMList = cadsrVALUEDOMAIN.getPermissibleValues()
       .getPermissibleValuesITEM();
@@ -705,8 +705,7 @@ public class CDEXMLInstancesReader
         //System.out.println(cadsrPermissibleValuesItemVMVersion);
       }
     }
-
-    System.out.print("], ");
+    System.out.print("\", ");
   }
 
   private static void processCADSRValueDomainConcepts(VALUEDOMAIN cadsrVALUEDOMAIN)
