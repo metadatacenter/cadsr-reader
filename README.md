@@ -15,8 +15,7 @@ The XML files can then be placed in a directory and processed by this software (
 
 There is an example CDE XML file in the ```src/main/resources/xml/example``` directory.
 
-The format of the caDSR CDEs is described by an [XML Schema document]
-(https://github.com/metadatacenter/cadsr2cedar/blob/master/src/main/resources/xsd/DataElement_V4.0.xsd).
+The format of the caDSR CDEs is described by an [XML Schema document](https://github.com/metadatacenter/cadsr2cedar/blob/master/src/main/resources/xsd/DataElement_V4.0.xsd).
 The [JAXB](http://www.oracle.com/technetwork/articles/javase/index-140168.html) library uses this document to generate Java classes to read the XML-encoded instances of caDSR CDEs.
 
 The [core translation routines](https://github.com/metadatacenter/cadsr2cedar/blob/master/src/main/java/org/metadatacenter/ingestor/cadsr/CDEXMLInstances2CEDARCDEInstances.java)
