@@ -10,12 +10,12 @@ import java.util.List;
 
 public class CDEXMLInstancesReader
 {
-  public static void main(String[] argc) throws IOException, JAXBException, DatatypeConfigurationException {
+  public static void main(String[] argc) throws IOException, JAXBException, DatatypeConfigurationException
+  {
 
     // Create JAXB XML unmarshaller
     JAXBContext jaxbContext = JAXBContext.newInstance(DataElementsList.class);
     Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-
 
     File xmlFile;
     File[] xmlFileList; //how to use file array
@@ -23,8 +23,6 @@ public class CDEXMLInstancesReader
     DataElementsList dataElementsList;
     if (argc.length == 0) {
       xmlDirectoryName = "src/main/resources/xml/example/";
-
-      // Specify the XML file containing caDSR data elements
       xmlFile = new File(xmlDirectoryName);
       xmlFileList = xmlFile.listFiles();
     } else {
@@ -37,15 +35,15 @@ public class CDEXMLInstancesReader
       System.exit(1);
     }
     //check for null, exit if no files to process
-    for(File file : xmlFileList) {
+    for (File file : xmlFileList) {
       String filename = file.getName();
 
       if (file.isFile() && (filename.endsWith(".xml") || filename.endsWith(".XML"))) {
         // Read a list of DataElement objects from an XML file containing a list of CDEs
-        dataElementsList = ((DataElementsList) jaxbUnmarshaller.unmarshal(file));
+        dataElementsList = ((DataElementsList)jaxbUnmarshaller.unmarshal(file));
 
         for (DataElement cadsrDataElement : dataElementsList.dataElement) {
-
+          processDataElement(cadsrDataElement);
         }
       } else {
         System.out.println(String.format("Invalid file: %s", filename));
@@ -56,20 +54,22 @@ public class CDEXMLInstancesReader
     }
   }
 
-  private static void processDataElement(DataElement cadsrDataElement) {
+  private static void processDataElement(DataElement cadsrDataElement)
+  {
     // Process each DataElement
     //System.out.println("Processing DataElement....");
 
-    convertCADSR2CEDARDataElementAttributes(cadsrDataElement);
-    convertCADSR2CEDARDataElementConcept(cadsrDataElement);
-    convertCADSR2CEDARValueDomain(cadsrDataElement);
-    convertCADSR2CEDARReferenceDocuments(cadsrDataElement);
-    convertCADSR2CEDARClassifications(cadsrDataElement);
-    convertCADSR2CEDARAlternateNames(cadsrDataElement);
-    convertCADSR2CEDARDataElementDerivation(cadsrDataElement);
+    processCADSR2CEDARDataElementAttributes(cadsrDataElement);
+    processCADSR2CEDARDataElementConcept(cadsrDataElement);
+    processCADSR2CEDARValueDomain(cadsrDataElement);
+    processCADSR2CEDARReferenceDocuments(cadsrDataElement);
+    processCADSR2CEDARClassifications(cadsrDataElement);
+    processCADSR2CEDARAlternateNames(cadsrDataElement);
+    processCADSR2CEDARDataElementDerivation(cadsrDataElement);
   }
 
-  private static void convertCADSR2CEDARDataElementAttributes(DataElement cadsrDataElement) {
+  private static void processCADSR2CEDARDataElementAttributes(DataElement cadsrDataElement)
+  {
 
     //data element details
     //System.out.println("**Data Element Details**");
@@ -121,7 +121,8 @@ public class CDEXMLInstancesReader
     //System.out.println(cadsrRegistrationStatus);
   }
 
-  private static void convertCADSR2CEDARDataElementConcept(DataElement cadsrDataElement) {
+  private static void processCADSR2CEDARDataElementConcept(DataElement cadsrDataElement)
+  {
     // build Data element concept from xml to json
     //System.out.println("**Data Element Concept**");
     DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT = cadsrDataElement.getDATAELEMENTCONCEPT();
@@ -135,7 +136,6 @@ public class CDEXMLInstancesReader
     //DEC Preferred Name
     String cadsrDECPreferredName = cadsrDATAELEMENTCONCEPT.getPreferredName().getContent();
     //System.out.println(cadsrDECPreferredName);
-
 
     //DEC Preferred Definition
     String cadsrDECPreferredDefinition = cadsrDATAELEMENTCONCEPT.getPreferredDefinition().getContent();
@@ -161,18 +161,19 @@ public class CDEXMLInstancesReader
     String cadsrDECContextVersion = cadsrDATAELEMENTCONCEPT.getContextVersion().getContent();
     //System.out.println(cadsrDECContextVersion);
 
-    convertCADSR2CEDARDataElementConceptConceptualDomain(cadsrDATAELEMENTCONCEPT);
-    convertCADSR2CEDARObjectClass(cadsrDATAELEMENTCONCEPT);
-    convertCADSR2CEDARProperty(cadsrDATAELEMENTCONCEPT);
+    processCADSR2CEDARDataElementConceptConceptualDomain(cadsrDATAELEMENTCONCEPT);
+    processCADSR2CEDARObjectClass(cadsrDATAELEMENTCONCEPT);
+    processCADSR2CEDARProperty(cadsrDATAELEMENTCONCEPT);
 
-    convertCADSR2CEDARObjectClassQualifier(cadsrDATAELEMENTCONCEPT);
+    processCADSR2CEDARObjectClassQualifier(cadsrDATAELEMENTCONCEPT);
 
-    convertCADSR2CEDARPropertyQualifier(cadsrDATAELEMENTCONCEPT);
+    processCADSR2CEDARPropertyQualifier(cadsrDATAELEMENTCONCEPT);
 
-    convertCADSR2CEDAROrigin(cadsrDATAELEMENTCONCEPT);
+    processCADSR2CEDAROrigin(cadsrDATAELEMENTCONCEPT);
   }
 
-  private static void convertCADSR2CEDARDataElementConceptConceptualDomain(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT) {
+  private static void processCADSR2CEDARDataElementConceptConceptualDomain(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT)
+  {
     //DEC conceptual domain
     //System.out.println("**DEC Conceptual Domain**");
     ConceptualDomain cadsrDATAELEMENTCONCEPTDECConceptualDomain = cadsrDATAELEMENTCONCEPT.getConceptualDomain();
@@ -202,7 +203,8 @@ public class CDEXMLInstancesReader
     //System.out.println(cadsrDECcdLongName);
   }
 
-  private static void convertCADSR2CEDARObjectClass(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT) {
+  private static void processCADSR2CEDARObjectClass(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT)
+  {
     //object class
     //System.out.println("**ObjectClass**");
     ObjectClass cadsrDATAELEMENTCONCEPTObjectClass = cadsrDATAELEMENTCONCEPT.getObjectClass();
@@ -230,12 +232,14 @@ public class CDEXMLInstancesReader
     //object class long name
     String cadsrObjClassLongName = cadsrDATAELEMENTCONCEPTObjectClass.getLongName().getContent();
     //System.out.println(cadsrObjClassLongName);
-    convertCADSR2CEDARObjectClassConceptDetails(cadsrDATAELEMENTCONCEPTObjectClass);
+    processCADSR2CEDARObjectClassConceptDetails(cadsrDATAELEMENTCONCEPTObjectClass);
   }
 
-  private static void convertCADSR2CEDARObjectClassConceptDetails(ObjectClass cadsrDATAELEMENTCONCEPTObjectClass) {
+  private static void processCADSR2CEDARObjectClassConceptDetails(ObjectClass cadsrDATAELEMENTCONCEPTObjectClass)
+  {
     //object class concept details list
-    List<ConceptDetailsITEM> cadsrDATAELEMENTCONCEPTObjectClassConceptDetailsITEM = cadsrDATAELEMENTCONCEPTObjectClass.getConceptDetails().getConceptDetailsITEM();
+    List<ConceptDetailsITEM> cadsrDATAELEMENTCONCEPTObjectClassConceptDetailsITEM = cadsrDATAELEMENTCONCEPTObjectClass
+      .getConceptDetails().getConceptDetailsITEM();
 
     if (!cadsrDATAELEMENTCONCEPTObjectClassConceptDetailsITEM.isEmpty()) {
       for (ConceptDetailsITEM val : cadsrDATAELEMENTCONCEPTObjectClassConceptDetailsITEM) {
@@ -275,7 +279,8 @@ public class CDEXMLInstancesReader
     }
   }
 
-  private static void convertCADSR2CEDARProperty(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT) {
+  private static void processCADSR2CEDARProperty(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT)
+  {
     //property
     //System.out.println("**Property**");
     Property cadsrDATAELEMENTCONCEPTProperty = cadsrDATAELEMENTCONCEPT.getProperty();
@@ -304,12 +309,14 @@ public class CDEXMLInstancesReader
     String cadsrPropertyLongName = cadsrDATAELEMENTCONCEPTProperty.getLongName().getContent();
     //System.out.println(cadsrPropertyLongName);
 
-    convertCADSR2CEDARPropertyConceptDetails(cadsrDATAELEMENTCONCEPTProperty);
+    processCADSR2CEDARPropertyConceptDetails(cadsrDATAELEMENTCONCEPTProperty);
   }
 
-  private static void convertCADSR2CEDARPropertyConceptDetails(Property cadsrDATAELEMENTCONCEPTProperty) {
+  private static void processCADSR2CEDARPropertyConceptDetails(Property cadsrDATAELEMENTCONCEPTProperty)
+  {
     //property concept details list
-    List<ConceptDetailsITEM> cadsrDATAELEMENTCONCEPTPropertyConceptDetailsITEM = cadsrDATAELEMENTCONCEPTProperty.getConceptDetails().getConceptDetailsITEM();
+    List<ConceptDetailsITEM> cadsrDATAELEMENTCONCEPTPropertyConceptDetailsITEM = cadsrDATAELEMENTCONCEPTProperty
+      .getConceptDetails().getConceptDetailsITEM();
 
     if (!cadsrDATAELEMENTCONCEPTPropertyConceptDetailsITEM.isEmpty()) {
       for (ConceptDetailsITEM val : cadsrDATAELEMENTCONCEPTPropertyConceptDetailsITEM) {
@@ -348,7 +355,8 @@ public class CDEXMLInstancesReader
     }
   }
 
-  private static void convertCADSR2CEDARObjectClassQualifier(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT) {
+  private static void processCADSR2CEDARObjectClassQualifier(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT)
+  {
     //object class qualifier
     String cadsrObjectClassQualifier = cadsrDATAELEMENTCONCEPT.getObjectClassQualifier().getContent();
 
@@ -361,7 +369,8 @@ public class CDEXMLInstancesReader
     //System.out.println(cadsrObjectClassQualifier);
   }
 
-  private static void convertCADSR2CEDARPropertyQualifier(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT) {
+  private static void processCADSR2CEDARPropertyQualifier(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT)
+  {
     //property qualifier
     String cadsrPropertyQualifier = cadsrDATAELEMENTCONCEPT.getPropertyQualifier().getContent();
 
@@ -374,7 +383,8 @@ public class CDEXMLInstancesReader
     //System.out.println(cadsrPropertyQualifier);
   }
 
-  private static void convertCADSR2CEDAROrigin(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT) {
+  private static void processCADSR2CEDAROrigin(DATAELEMENTCONCEPT cadsrDATAELEMENTCONCEPT)
+  {
     //origin
     String cadsrDECOrigin = cadsrDATAELEMENTCONCEPT.getOrigin().getContent();
 
@@ -387,7 +397,8 @@ public class CDEXMLInstancesReader
     //System.out.println(cadsrDECOrigin);
   }
 
-  private static void convertCADSR2CEDARValueDomain(DataElement cadsrDataElement) {
+  private static void processCADSR2CEDARValueDomain(DataElement cadsrDataElement)
+  {
     //value domain
     //System.out.println("**Value Domain**");
     VALUEDOMAIN cadsrVALUEDOMAIN = cadsrDataElement.getVALUEDOMAIN();
@@ -424,7 +435,7 @@ public class CDEXMLInstancesReader
     String cadsrValueDomainContextVersion = cadsrVALUEDOMAIN.getContextVersion().getContent();
     //System.out.println(cadsrValueDomainContextVersion);
 
-    convertCADSR2CEDARValueDomainConceptualDomain(cadsrVALUEDOMAIN);
+    processCADSR2CEDARValueDomainConceptualDomain(cadsrVALUEDOMAIN);
 
     //value domain attributes continued
     //System.out.println("**Value Domain cont**");
@@ -521,15 +532,15 @@ public class CDEXMLInstancesReader
         cadsrValueDomainOrigin = "NULL";
       }
     }
-    convertCADSR2CEDARRepresentations(cadsrVALUEDOMAIN);
+    processCADSR2CEDARRepresentations(cadsrVALUEDOMAIN);
 
-    convertCADSR2CEDARPermissibleValues(cadsrVALUEDOMAIN);
+    processCADSR2CEDARPermissibleValues(cadsrVALUEDOMAIN);
 
-
-    convertCADSR2CEDARValueDomainConcepts(cadsrVALUEDOMAIN);
+    processCADSR2CEDARValueDomainConcepts(cadsrVALUEDOMAIN);
   }
 
-  private static void convertCADSR2CEDARValueDomainConceptualDomain(VALUEDOMAIN cadsrVALUEDOMAIN) {
+  private static void processCADSR2CEDARValueDomainConceptualDomain(VALUEDOMAIN cadsrVALUEDOMAIN)
+  {
     //value domain conceptual domain
     //System.out.println("**VD Conceptual Domain**");
     ConceptualDomain cadsrVDConceptualDomain = cadsrVALUEDOMAIN.getConceptualDomain();
@@ -559,7 +570,8 @@ public class CDEXMLInstancesReader
     //System.out.println(cadsrVDConceptualDomainLongName);
   }
 
-  private static void convertCADSR2CEDARRepresentations(VALUEDOMAIN cadsrVALUEDOMAIN) {
+  private static void processCADSR2CEDARRepresentations(VALUEDOMAIN cadsrVALUEDOMAIN)
+  {
     //representation
     //System.out.println("**Representation**");
     Representation cadsrValueDomainRepresentation = cadsrVALUEDOMAIN.getRepresentation();
@@ -588,12 +600,14 @@ public class CDEXMLInstancesReader
     String cadsrRepresentationLongName = cadsrValueDomainRepresentation.getLongName().getContent();
     //System.out.println(cadsrRepresentationLongName);
 
-    convertCADSR2CEDARRepresentationConceptDetails(cadsrValueDomainRepresentation);
+    processCADSR2CEDARRepresentationConceptDetails(cadsrValueDomainRepresentation);
   }
 
-  private static void convertCADSR2CEDARRepresentationConceptDetails(Representation cadsrValueDomainRepresentation){
+  private static void processCADSR2CEDARRepresentationConceptDetails(Representation cadsrValueDomainRepresentation)
+  {
     //representation concept details list
-    List<ConceptDetailsITEM> cadsrRepresentationConceptDetailsITEM = cadsrValueDomainRepresentation.getConceptDetails().getConceptDetailsITEM();
+    List<ConceptDetailsITEM> cadsrRepresentationConceptDetailsITEM = cadsrValueDomainRepresentation.getConceptDetails()
+      .getConceptDetailsITEM();
 
     if (!cadsrRepresentationConceptDetailsITEM.isEmpty()) {
       for (ConceptDetailsITEM val : cadsrRepresentationConceptDetailsITEM) {
@@ -636,10 +650,12 @@ public class CDEXMLInstancesReader
     }
   }
 
-  private static void convertCADSR2CEDARPermissibleValues(VALUEDOMAIN cadsrVALUEDOMAIN) {
+  private static void processCADSR2CEDARPermissibleValues(VALUEDOMAIN cadsrVALUEDOMAIN)
+  {
     //permissible values
     //System.out.println("**Permissible Values**");
-    List<PermissibleValuesITEM> permissibleValuesITEMList = cadsrVALUEDOMAIN.getPermissibleValues().getPermissibleValuesITEM();
+    List<PermissibleValuesITEM> permissibleValuesITEMList = cadsrVALUEDOMAIN.getPermissibleValues()
+      .getPermissibleValuesITEM();
     PermissibleValues cedarPermissibleValues = new PermissibleValues();
     if (!permissibleValuesITEMList.isEmpty()) {
       for (PermissibleValuesITEM val : permissibleValuesITEMList) {
@@ -690,10 +706,12 @@ public class CDEXMLInstancesReader
     }
   }
 
-  private static void convertCADSR2CEDARValueDomainConcepts(VALUEDOMAIN cadsrVALUEDOMAIN) {
+  private static void processCADSR2CEDARValueDomainConcepts(VALUEDOMAIN cadsrVALUEDOMAIN)
+  {
     // value domain concepts
     //System.out.println("**Value Domain Concepts**");
-    List<ValueDomainConceptsITEM> valueDomainConceptsITEMList = cadsrVALUEDOMAIN.getValueDomainConcepts().getValueDomainConceptsITEM();
+    List<ValueDomainConceptsITEM> valueDomainConceptsITEMList = cadsrVALUEDOMAIN.getValueDomainConcepts()
+      .getValueDomainConceptsITEM();
 
     if (!valueDomainConceptsITEMList.isEmpty()) {
       for (ValueDomainConceptsITEM val : valueDomainConceptsITEMList) {
@@ -736,11 +754,12 @@ public class CDEXMLInstancesReader
     }
   }
 
-
-  private static void convertCADSR2CEDARReferenceDocuments(DataElement cadsrDataElement) {
+  private static void processCADSR2CEDARReferenceDocuments(DataElement cadsrDataElement)
+  {
     //reference documents list
     //System.out.println("**Reference Documents**");
-    List<REFERENCEDOCUMENTSLISTITEM> referencedocumentslistitemList = cadsrDataElement.getREFERENCEDOCUMENTSLIST().getREFERENCEDOCUMENTSLISTITEM();
+    List<REFERENCEDOCUMENTSLISTITEM> referencedocumentslistitemList = cadsrDataElement.getREFERENCEDOCUMENTSLIST()
+      .getREFERENCEDOCUMENTSLISTITEM();
     if (!referencedocumentslistitemList.isEmpty()) {
       for (REFERENCEDOCUMENTSLISTITEM val : referencedocumentslistitemList) {
 
@@ -800,7 +819,8 @@ public class CDEXMLInstancesReader
     }
   }
 
-  private static void convertCADSR2CEDARClassifications(DataElement cadsrDataElement) {
+  private static void processCADSR2CEDARClassifications(DataElement cadsrDataElement)
+  {
     //classification items
     //System.out.println("**Classifications**");
     CLASSIFICATIONSLIST cadsrClassificationsList = cadsrDataElement.getCLASSIFICATIONSLIST();
@@ -811,7 +831,7 @@ public class CDEXMLInstancesReader
 
         ClassificationScheme cadsrClassificationScheme = val.getClassificationScheme();
 
-        convertCADSR2CEDARClassificationScheme(cadsrClassificationScheme);
+        processCADSR2CEDARClassificationScheme(cadsrClassificationScheme);
 
         //classification scheme attributes continued
         //System.out.println("classifications list item (cont): ");
@@ -835,7 +855,8 @@ public class CDEXMLInstancesReader
     }
   }
 
-  private static void convertCADSR2CEDARClassificationScheme(ClassificationScheme cadsrClassificationScheme) {
+  private static void processCADSR2CEDARClassificationScheme(ClassificationScheme cadsrClassificationScheme)
+  {
     //classification scheme public id
     String cadsrClassificationSchemePublicID = cadsrClassificationScheme.getPublicId().getContent();
     //System.out.println(cadsrClassificationSchemePublicID);
@@ -857,14 +878,14 @@ public class CDEXMLInstancesReader
     //System.out.println(cadsrClassificationSchemeVersion);
   }
 
-  private static void convertCADSR2CEDARAlternateNames(DataElement cadsrDataElement) {
+  private static void processCADSR2CEDARAlternateNames(DataElement cadsrDataElement)
+  {
     //alternate names
     //System.out.println("**Alternate Names**");
     ALTERNATENAMELIST cadsrALTERNATENAMELIST = cadsrDataElement.getALTERNATENAMELIST();
     List<ALTERNATENAMELISTITEM> cadsrALTERNATENAMELISTITEM = cadsrALTERNATENAMELIST.getALTERNATENAMELISTITEM();
     if (!cadsrALTERNATENAMELISTITEM.isEmpty()) {
       for (ALTERNATENAMELISTITEM val : cadsrALTERNATENAMELISTITEM) {
-
 
         //alternate name list item context name
         String cadsrAlternateNameListItemContextName = val.getContextName().getContent();
@@ -889,7 +910,8 @@ public class CDEXMLInstancesReader
     }
   }
 
-  private static void convertCADSR2CEDARDataElementDerivation(DataElement cadsrDataElement) {
+  private static void processCADSR2CEDARDataElementDerivation(DataElement cadsrDataElement)
+  {
     //data element derivation
     //System.out.println("**Data Element Derivation**");
     DATAELEMENTDERIVATION cadsrDATAELEMENTDERIVATION = cadsrDataElement.getDATAELEMENTDERIVATION();
@@ -905,7 +927,8 @@ public class CDEXMLInstancesReader
     //System.out.println(cadsrDataElementDerivationType);
 
     //derivation type description
-    String cadsrDataElementDerivationTypeDescription = cadsrDATAELEMENTDERIVATION.getDerivationTypeDescription().getContent();
+    String cadsrDataElementDerivationTypeDescription = cadsrDATAELEMENTDERIVATION.getDerivationTypeDescription()
+      .getContent();
     if (cadsrDataElementDerivationTypeDescription.equals("")) {
       cadsrDataElementDerivationTypeDescription = cadsrDATAELEMENTDERIVATION.getDerivationTypeDescription().getNULL();
       if (cadsrDataElementDerivationTypeDescription.equals("TRUE")) {
@@ -935,28 +958,31 @@ public class CDEXMLInstancesReader
     //System.out.println(cadsrDataElementDerivationRule);
 
     //concatenation character
-    String cadsrDataElementDerivationConcatenationCharacter = cadsrDATAELEMENTDERIVATION.getConcatenationCharacter().getContent();
+    String cadsrDataElementDerivationConcatenationCharacter = cadsrDATAELEMENTDERIVATION.getConcatenationCharacter()
+      .getContent();
     if (cadsrDataElementDerivationConcatenationCharacter.equals("")) {
-      cadsrDataElementDerivationConcatenationCharacter = cadsrDATAELEMENTDERIVATION.getConcatenationCharacter().getNULL();
+      cadsrDataElementDerivationConcatenationCharacter = cadsrDATAELEMENTDERIVATION.getConcatenationCharacter()
+        .getNULL();
       if (cadsrDataElementDerivationConcatenationCharacter.equals("TRUE")) {
         cadsrDataElementDerivationConcatenationCharacter = "NULL";
       }
     }
     //System.out.println(cadsrDataElementDerivationConcatenationCharacter);
 
-    convertCADSR2CEDARComponentDataElements(cadsrDATAELEMENTDERIVATION);
+    processCADSR2CEDARComponentDataElements(cadsrDATAELEMENTDERIVATION);
   }
 
-  private static void convertCADSR2CEDARComponentDataElements(DATAELEMENTDERIVATION cadsrDATAELEMENTDERIVATION) {
-    //component data elements
+  private static void processCADSR2CEDARComponentDataElements(DATAELEMENTDERIVATION cadsrDATAELEMENTDERIVATION)
+  {
     //System.out.println("**Component Data Elements**");
-    List<ComponentDataElementsListITEM> cadsrComponenentDataElementsList = cadsrDATAELEMENTDERIVATION.getComponentDataElementsList().getComponentDataElementsListITEM();
+    List<ComponentDataElementsListITEM> cadsrComponenentDataElementsList = cadsrDATAELEMENTDERIVATION
+      .getComponentDataElementsList().getComponentDataElementsListITEM();
     ComponentDataElementsList cedarComponentDataElements = new ComponentDataElementsList();
 
     String componentDataElementsListNULLval = null;
     if (cadsrComponenentDataElementsList.isEmpty()) {
       componentDataElementsListNULLval = cadsrDATAELEMENTDERIVATION.getComponentDataElementsList().getNULL();
-      if (componentDataElementsListNULLval==null) {
+      if (componentDataElementsListNULLval == null) {
         componentDataElementsListNULLval = "NULL";
       } else if (componentDataElementsListNULLval.equals("TRUE")) {
         componentDataElementsListNULLval = "NULL";
