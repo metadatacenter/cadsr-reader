@@ -1,4 +1,4 @@
-package org.metadatacenter.ingestor.cadsr;
+package org.metadatacenter.cadsr;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -44,7 +44,7 @@ public class CDEXMLInstancesReader
         // Read a list of DataElement objects from an XML file containing a list of CDEs
         dataElementsList = ((DataElementsList) jaxbUnmarshaller.unmarshal(file));
 
-        for (org.metadatacenter.ingestor.cadsr.DataElement cadsrDataElement : dataElementsList.dataElement) {
+        for (DataElement cadsrDataElement : dataElementsList.dataElement) {
 
         }
       } else {
