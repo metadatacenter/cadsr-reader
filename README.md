@@ -9,12 +9,12 @@ common data elements (CDEs).
 
 XML files containing various CDE collections can be found [here](https://wiki.nci.nih.gov/display/caDSR/caDSR+Hosted+Data+Standards%2C+Downloads%2C+and+Transformation+Utilities).
 Go to the area labeled "Download caDSR Community Released CDEs" and click on "caDSR Production CDEs in XML".
-A large ZIP file can then be downloaded which will contain a deozen or so XML files containing caDSR CDEs.
+A large ZIP file can then be downloaded which will contain a dozen or so XML files containing caDSR CDEs.
 Note: these enclosed XML files seemed to be encoded as ISO-LATIN-1 so convert them to UTF-8 so that the code will correctly process them.
 
-The XML files can then be placed in a directory and processed by this software.
+The XML files can then be placed in a directory and processed by this software (see execution instructions below).
 
-There is an example CDE file in the ```src/main/resources/xml/example``` directory.
+There is an example CDE XML file in the ```src/main/resources/xml/example``` directory.
 
 The format of the caDSR CDEs is described by an [XML Schema document]
 (https://github.com/metadatacenter/cadsr2cedar/blob/master/src/main/resources/xsd/DataElement_V4.0.xsd).
