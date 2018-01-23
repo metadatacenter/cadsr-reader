@@ -8,7 +8,7 @@
   <jaxb:bindings schemaLocation="../xsd/DataElement_V4.0.xsd">
 
     <jaxb:schemaBindings>
-      <jaxb:package name="org.metadatacenter.ingestor.cadsr"/>
+      <jaxb:package name="org.metadatacenter.cadsr"/>
     </jaxb:schemaBindings>
 
     <jaxb:bindings node="//xs:element[@name='LongName']">
