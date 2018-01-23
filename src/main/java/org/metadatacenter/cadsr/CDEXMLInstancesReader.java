@@ -469,7 +469,7 @@ public class CDEXMLInstancesReader
     if (cadsrValueDomainMaximumLength.equals("") && cadsrVALUEDOMAIN.getMaximumLength().getNULL().equals("TRUE")) {
       cadsrValueDomainMaximumLength = "NULL";
     }
-    System.out.print("max:" + cadsrValueDomainMaximumLength + ", ");
+    System.out.print(cadsrValueDomainMaximumLength + ", ");
 
     //value domain minimum length
     String cadsrValueDomainMinimumLength = cadsrVALUEDOMAIN.getMinimumLength().getContent();
@@ -479,7 +479,7 @@ public class CDEXMLInstancesReader
         cadsrValueDomainMinimumLength = "NULL";
       }
     }
-    System.out.print("min:" + cadsrValueDomainMinimumLength + ", ");
+    System.out.print(cadsrValueDomainMinimumLength + ", ");
 
     //decimal place
     String cadsrValueDomainDecimalPlace = cadsrVALUEDOMAIN.getDecimalPlace().getContent();
@@ -489,7 +489,7 @@ public class CDEXMLInstancesReader
         cadsrValueDomainDecimalPlace = "NULL";
       }
     }
-    System.out.print("dec:" + cadsrValueDomainDecimalPlace + ", ");
+    System.out.print(cadsrValueDomainDecimalPlace + ", ");
 
     //character set name
     String cadsrValueDomainCharacterSetName = cadsrVALUEDOMAIN.getCharacterSetName().getContent();
@@ -533,7 +533,7 @@ public class CDEXMLInstancesReader
 
     processCADSRValueDomainRepresentations(cadsrVALUEDOMAIN);
 
-    processCADSRPermissibleValues(cadsrVALUEDOMAIN);
+    //processCADSRPermissibleValues(cadsrVALUEDOMAIN);
 
     processCADSRValueDomainConcepts(cadsrVALUEDOMAIN);
 
@@ -663,7 +663,7 @@ public class CDEXMLInstancesReader
 
         // permissible values item valid value
         String cadsrPermissibleValuesItemValidValue = val.getVALIDVALUE().getContent();
-        System.out.print(cadsrPermissibleValuesItemValidValue + ", ");
+        System.out.print(cadsrPermissibleValuesItemValidValue + ": ");
 
         // permissible values item value meaning
         String cadsrPermissibleValuesItemValueMeaning = val.getVALUEMEANING().getContent();
