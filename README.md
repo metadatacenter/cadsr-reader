@@ -51,10 +51,10 @@ Then build it with Maven:
 
     mvn clean install
 
-To process the includes CDEs in the ```src/main/resources/xml/example``` directory:
+To process the supplied CDEs in the ```src/main/resources/xml/example``` directory:
 
     mvn exec:java
 
-To process CDEs in a particular directory:
+To process CDEs in a user-specified directory:
 
     mvn exec:java -Dexec.args="<directory containing CDE XML files>"
