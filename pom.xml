@@ -4,12 +4,12 @@
   <parent>
     <groupId>org.metadatacenter</groupId>
     <artifactId>cedar-parent</artifactId>
-    <version>1.6.1-SNAPSHOT</version>
+    <version>1.6.2-SNAPSHOT</version>
   </parent>
   
   <groupId>org.metadatacenter</groupId>
   <artifactId>cadsr-reader</artifactId>
-  <version>1.6.1-SNAPSHOT</version>
+  <version>1.6.2-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Software that reads caDSR XML-encoded CDEs</name>
 
@@ -18,9 +18,9 @@
   </properties>
 
   <scm>
-    <connection>scm:git:git@github.com:metadatacenter/cadsr2cedar.git</connection>
-    <developerConnection>scm:git:git@github.com:metadatacenter/cadsr2cedar.git</developerConnection>
-    <url>https://github.com/metadatacenter/cadsr2cedar</url>
+    <connection>scm:git:git@github.com:metadatacenter/cadsr-reader.git</connection>
+    <developerConnection>scm:git:git@github.com:metadatacenter/cadsr-reader.git</developerConnection>
+    <url>https://github.com/metadatacenter/cadsr-reader</url>
   </scm>
 
   <build>
