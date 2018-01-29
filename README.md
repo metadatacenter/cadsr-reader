@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/metadatacenter/cadsr-reader.svg?branch=master)](https://travis-ci.org/metadatacenter/cadsr-reader)
+
 caDSR Reader
 ============
 
