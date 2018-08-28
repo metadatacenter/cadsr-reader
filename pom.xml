@@ -9,7 +9,7 @@
   
   <groupId>org.metadatacenter</groupId>
   <artifactId>cadsr-reader</artifactId>
-  <version>1.8.8</version>
+  <version>1.9.4-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Software that reads caDSR XML-encoded CDEs</name>
 
@@ -21,7 +21,6 @@
     <connection>scm:git:git@github.com:metadatacenter/cadsr-reader.git</connection>
     <developerConnection>scm:git:git@github.com:metadatacenter/cadsr-reader.git</developerConnection>
     <url>https://github.com/metadatacenter/cadsr-reader</url>
-    <tag>release-1.8.8</tag>
   </scm>
 
   <build>
