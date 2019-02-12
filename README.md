@@ -25,7 +25,7 @@ The [core translation routines](https://github.com/metadatacenter/cadsr2cedar/bl
 extract information from the JAXB-generated Java objects and displays summary information about them.
 
 Note that [JAXB bindings](https://github.com/metadatacenter/cadsr2cedar/blob/master/src/main/resources/xjb/bindings.xjb)
-were required to rename some generated classes.
+were required to rename some generated classes to avoid name collisions.
 
 Also not that the [caDSR CDE XML Schema](https://github.com/metadatacenter/cadsr2cedar/blob/master/src/main/resources/xsd/DataElement_V4.0.xsd)
 was produced semi-automatically from the caDSR-supplied [DTD-encoded schema](https://github.com/metadatacenter/cadsr2cedar/blob/master/src/main/resources/dtd/DataElement_V4.0.dtd).
@@ -33,12 +33,9 @@ We could not work with the DTD-encoded schema directly because the JAXB binding 
 
 #### Building and Running
 
-NOTE: Java 8 must be used to build this project since the JAXB2 Maven plugin is not compatible with Java 9.
-On OS X use the following command to switch: ```export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)```
-
 To build this library you must have the following items installed:
 
-+ [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
++ [Java 11](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 + A tool for checking out a [Git](http://git-scm.com/) repository.
 + Apache's [Maven](http://maven.apache.org/index.html).
 

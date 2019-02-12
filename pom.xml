@@ -4,17 +4,19 @@
   <parent>
     <groupId>org.metadatacenter</groupId>
     <artifactId>cedar-parent</artifactId>
-    <version>1.9.4-SNAPSHOT</version>
+    <version>2.2.8-SNAPSHOT</version>
   </parent>
   
   <groupId>org.metadatacenter</groupId>
   <artifactId>cadsr-reader</artifactId>
-  <version>1.9.4-SNAPSHOT</version>
+  <version>2.2.8-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Software that reads caDSR XML-encoded CDEs</name>
 
   <properties>
-     <java.version>1.8</java.version>
+    <jaxb.generated>${project.build.directory}/generated-sources/jaxb</jaxb.generated>
+
+    <java.version>11</java.version>
   </properties>
 
   <scm>
@@ -22,6 +24,24 @@
     <developerConnection>scm:git:git@github.com:metadatacenter/cadsr-reader.git</developerConnection>
     <url>https://github.com/metadatacenter/cadsr-reader</url>
   </scm>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.activation</groupId>
+      <artifactId>activation</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.glassfish.jaxb</groupId>
+      <artifactId>jaxb-runtime</artifactId>
+    </dependency>
+  </dependencies>
 
   <build>
 
@@ -72,26 +92,40 @@
       </plugin>
 
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>jaxb2-maven-plugin</artifactId>
-        <!-- Awaiting later version that supports Java 9 -->
-        <version>2.3.1</version> 
+        <groupId>com.github.davidmoten</groupId>
+        <artifactId>jax-maven-plugin</artifactId>
+        <version>0.1.5</version> 
         <executions>
           <execution>
-            <id>xjc</id>
+            <id>xjc-generate-from-dtd</id>
+            <phase>generate-sources</phase>
             <goals>
               <goal>xjc</goal>
             </goals>
+            <configuration>
+              <systemProperties>
+                <enableExternalEntityProcessing>true</enableExternalEntityProcessing>
+              </systemProperties>
+              <jvmArguments>
+                <jvmArgument>-Xms32m</jvmArgument>
+              </jvmArguments>
+              <arguments>
+                <argument>-verbose</argument>
+                <argument>-d</argument>
+                <argument>${jaxb.generated}</argument>
+                <argument>-p</argument>
+                <argument>org.metadatacenter.cadsr</argument>
+                <argument>-b</argument>
+                <argument>${project.basedir}/src/main/resources/xjb/bindings.xjb</argument>
+                <argument>-xmlschema</argument>
+                <argument>${project.basedir}/src/main/resources/xsd/DataElement_V4.0.xsd</argument>
+              </arguments>
+            </configuration>
           </execution>
         </executions>
-        <configuration>
-          <packageName>org.metadatacenter.cadsr</packageName>
-          <sources>src/main/resources/xsd</sources>
-          <xjbSources>src/main/resources/xjb</xjbSources>
-        </configuration>
       </plugin>
 
-      <!-- Tell an IDE to include generated code in its compile phase. jsonschema2pojo uses ${basedir}/target/java-gen -->
+      <!-- Tell an IDE to include generated code in its compile phase. -->
       <plugin> 
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
@@ -104,7 +138,7 @@
             </goals>
             <configuration>
               <sources>
-                <source>${basedir}/target/java-gen</source>
+                <source>${jaxb.generated}</source>
               </sources>
             </configuration>
           </execution>
